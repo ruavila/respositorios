@@ -1,0 +1,313 @@
+<!<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Innovación: Cultura Japonesa</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="image/bandera.png" type="image/png">  <!--Ícono en la pestaña del navegador-->
+    </head>
+        
+    <!-- Aviso emergente -->
+<div id="aviso" class="aviso-oculto">
+    ¡En construcción, disculpe la molestia!
+</div>
+
+<script>
+function mostrarAviso() {
+    let aviso = document.getElementById("aviso");
+    aviso.classList.add("mostrar");
+
+    // Ocultar después de 3 segundos
+    setTimeout(() => {
+        aviso.classList.remove("mostrar");
+    }, 3000);
+}
+</script>
+    
+    
+    
+    
+        <body>
+            <!--Aqui va la cebecera-->
+            <header>
+  <!-- Bandera -->
+  <div class="bandera">
+    <img src="image/bandera.png" width="200" height="100" alt="Bandera de Japón">
+  </div>
+
+  <!-- Título -->
+  <div class="titulo">Innovación: Cultura Japonesa</div>
+
+  <!-- Logo + idioma -->
+  <div class="logo">
+    <img src="image/logo.png" width="200" height="100" alt="Japón en Japonés" title="Japón en Japonés">
+    <div class="idioma">
+        <select id="idioma">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+</div>
+
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tradiciones.html">Tradiciones</a></li>
+      <li><a href="estetica.html">Estética</a></li>
+      <li><a href="innovacion.html" class="active">Innovación</a></li>
+      <li><a href="gastronomia.html">Gastronomía</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#" onclick="mostrarAviso()">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+    <!--Hero imagnes de Japón-->
+    <section class="banner">
+        <div>
+            <img src="image/banner.png" width="100%" height="150" alt="badera Japón" title="Badera Japón">
+        </div>
+
+        <!--contenedor principal-->
+        <div class="contenedorinn"> 
+            </section>
+        <!--Bloque Principales-->
+                <main>
+                <div class="gridinn">
+                     <div class="boxinn">
+    <h3>Japón combate los mosquitos con técnicas antiguas y nuevas</h3>
+    <img src="image/innovacion/espiral.jpg" alt="Espiral antimosquitos">
+    
+    <p class="justificado resumen">
+        Desde tiempos inmemoriales, los humanos y los mosquitos han estado en conflicto. Además de estropear nuestros pícnics y mantenernos despiertos por la noche con sus zumbidos, los mosquitos son, sobre todo, propagadores de enfermedades mortales como la malaria, el virus del Nilo Occidental y el dengue...
+    </p>
+
+    <div class="contenido-expandido" style="display: none;">
+        <p class="justificado">
+            Si bien estas enfermedades son extremamente raras en el Japón actual, el caso es diferente en algunas partes del mundo. Descubramos cómo han lidiado los japoneses con los mosquitos a lo largo de los siglos y cómo está contribuyendo Japón a la batalla global contra estas molestias voladoras.
+            <br><br>
+            <strong>Técnicas de eras pasadas:</strong> Hasta el siglo XIX, las técnicas para ahuyentar a los mosquitos eran rudimentarias y de variada efectividad. Al igual que en muchas otras culturas del mundo, por la noche, los japoneses colocaban mosquiteras sobre las camas. Otra práctica común era quemar una mezcla de madera y hojas para que el humo mantuviera a los mosquitos fuera de la casa o del patio. Si bien el humo era eficaz para repeler los mosquitos, también era bastante desagradable para quienes estaban alrededor. Pero todo esto cambió a finales del siglo XIX cuando apareció un nuevo invento: el espiral antimosquitos.
+        </p>
+        <div class="imagenes-adicionales">
+            <img src="image/innovacion/mosquitera.jpg" alt="Mosquitera japonesa">
+           <!-- <img src="image/innovacion/humo.jpg" alt="Humo repelente"> -->
+        </div>
+    </div>
+
+    <button class="leer-mas-btn" onclick="toggleContenido(this)">Leer más...</button>
+</div>
+ 
+                <div class="boxinn">
+    <h3>Tecnología vestible de apoyo al trabajo</h3>
+
+    <img src="image/innovacion/exoesqueletos.jpg" alt="Exoesqueletos prendas de vestir">
+    <p class="referencia-img">(Fotos cortesía de CYBERDYNE Inc., Power Assist International Corporation, EIKO Co., Ltd. y SUN-S Co., Ltd)</p>
+
+    <!-- Resumen visible -->
+    <p class="justificado resumen">
+        La tecnología vestible ayuda a mejorar el entorno laboral, por ejemplo, asistiendo en sus movimientos a los operarios de distintos trabajos en terreno. En los últimos años han aparecido distintos tipos de tecnologías vestibles, cada una con sus propias características.
+    </p>
+
+    <!-- Contenido expandible -->
+    <div class="contenido-expandido" style="display: none;">
+        <p class="justificado">
+            Los exoesqueletos se utilizan en diversos ámbitos, como la industria manufacturera, en la que con frecuencia hay que acarrear cargas pesadas; la agricultura, que requiere muchas veces trabajar agachados; además de la atención a largo plazo, que brinda apoyo en la vida diaria a personas de la tercera edad.
+            <br><br>
+            Asimismo, ante la preocupación por el aumento de las temperaturas producto del calentamiento global, recientemente se han popularizado de golpe las prendas con ventiladores eléctricos, como medida contra los intensos calores del verano japonés.
+            <br><br>
+            <strong>En este artículo presentamos algunos sistemas vestibles que ayudan al trabajo en Japón.</strong>
+            <br><br>
+            <strong>¿Qué es un exoesqueleto?</strong>
+            <br>
+            El término exoesqueleto se refiere a las prendas de vestir o los armazones rígidos externos que ayudan al usuario a realizar distintos movimientos. Mediante actuadores eléctricos (dispositivos de accionamiento), músculos artificiales y otros sistemas, brindan apoyo a las funciones físicas con fuentes de energía distintas a la fuerza humana. Así, permiten reducir la carga física que implica levantar objetos pesados o al agacharse para trasladar objetos.
+            <br><br>
+            En las primeras etapas de su desarrollo, los exoesqueletos eran pesados, costosos y difíciles de usar en la práctica. Sin embargo, gracias a los avances tecnológicos ahora son más livianos y ofrecen una mejor y más variada tecnología de asistencia. Actualmente se desarrollan diversos tipos de exoesqueletos con y sin motor, que se aprovechan para distintos usos.
+            <br><br>
+            Por ejemplo, en campos como la medicina y la atención a largo plazo, hay soportes que reducen la carga en la parte baja de la espalda de los cuidadores. También hay equipos que ayudan a moverse de forma autónoma a quienes lo necesitan o que complementan los movimientos de los operarios en diversos lugares de trabajo.
+            <br><br>
+            Además, hay equipos que usan la fuerza motriz de un motor o similar, así como otros que usan mecanismos como resortes y tubos. Por eso, para usar exoesqueletos hay que tener en cuenta los objetivos y la naturaleza de las actividades para elegir el adecuado.
+        </p>
+    </div>
+
+    <!-- Botón para expandir/reducir -->
+    <button class="leer-mas-btn" onclick="toggleContenido(this)">Leer más...</button>
+</div>
+                    
+                    
+             <div class="boxinn">
+    <h3>Impulsando la innovación: cómo las empresas japonesas destacan en el ámbito tecnológico global</h3>
+
+    <img src="image/innovacion/empresarial.png" alt="Innovación en las empresas Japonesas">
+
+    <p class="justificado">
+        Abarca áreas como la robótica, la electrónica de consumo, la inteligencia artificial y la tecnología de la luz. Ejemplos notables incluyen los robots HAL que ayudan a personas con discapacidades, el descubrimiento de la luz LED azul, y la creación de los emojis. Japón también destaca...
+    </p>
+    <p class="justificado">
+        Japón ha sido reconocido durante mucho tiempo como líder mundial en innovación tecnológica, y sus empresas traspasan constantemente los límites y establecen nuevos estándares en diversas industrias. Desde la electrónica hasta la automoción, la destreza de Japón en avances tecnológicos es impresionante y ha dejado una marca indeleble en el ámbito tecnológico mundial. En este artículo, profundizamos en los factores que han contribuido al éxito excepcional de Japón en impulsar la innovación y cómo las empresas japonesas continúan sobresaliendo en este panorama dinámico.
+    </p>
+    <p class="justificado">
+        <strong>Un legado de precisión y calidad:</strong><br>
+        La innovación japonesa tiene sus raíces profundamente arraigadas en la cultura de la precisión y la atención meticulosa al detalle. Este énfasis cultural en la artesanía y la calidad se ha traducido perfectamente en el mundo de la tecnología. Empresas como Sony, Panasonic y Canon han construido su reputación global sobre la base de producir productos de alta calidad que cumplen con estándares rigurosos. Esta dedicación a la precisión ha permitido a las empresas japonesas ganarse la confianza de los consumidores y establecer una lealtad duradera a la marca, allanando el camino para que prospere la innovación.
+    </p>
+</div>
+
+                    <div class="boxinn">
+    <h3>¿Por qué Aprender Japonés en 2025? Uno de los Idiomas del Futuro</h3>
+
+    <p class="justificado">
+        El japonés se perfila como uno de los idiomas del futuro por diversas razones que lo convierten en una opción atractiva y estratégica para el aprendizaje en 2025 y más allá. Japón mantiene su posición como una de las economías más grandes del mundo, ocupando el tercer lugar (o cuarto dependiendo el índice) después de Estados Unidos y China. Esta fortaleza económica se traduce en oportunidades laborales y comerciales para quienes dominan el idioma.
+        Las empresas japonesas como Sony, Toyota, Toshiba, Nintendo y Canon son líderes mundiales en tecnología e innovación, lo que hace que el japonés sea crucial en sectores de vanguardia como la robótica, la inteligencia artificial y la electrónica de consumo.
+        El japonés se ha posicionado como la quinta lengua más estudiada en el mundo, superando incluso al italiano. Este crecimiento se refleja en el aumento significativo de matrículas en cursos de japonés en instituciones educativas de todo el mundo.
+        La popularidad del japonés se debe en parte a su creciente importancia en el ámbito económico y tecnológico. Japón es una potencia industrial y tecnológica, y el conocimiento del idioma puede ser crucial para establecer relaciones comerciales sólidas y acceder a oportunidades laborales en sectores como la tecnología y la innovación.
+        Además, el interés por la cultura japonesa ha llevado a que más personas busquen aprender el idioma para una inmersión más profunda en la cultura, lo que incluye desde la literatura hasta la música y la gastronomía.
+    </p>
+
+    <img src="image/innovacion/estudiojapones.png" alt="Estudio del Japonés">
+</div>  
+            
+                    <div class="boxinn">
+    <h3>Burbujas ultrafinas: la revolución en los sistemas de agua domésticos</h3>
+
+    <!-- Imagen principal -->
+    <img src="image/innovacion/burbujas.jpg" alt="Sistema de agua domésticos">
+
+    <!-- Texto de referencia justo debajo de la imagen -->
+    <p class="referencia-img">
+        Arriba: imagen ilustrativa de un sistema de suministro de agua caliente que utiliza burbujas ultrafinas en todas las instalaciones de agua de la casa. (Foto cortesía de Rinnai)
+        <br>
+        Abajo izquierda: imagen conceptual de las burbujas (Foto cortesía de Rinnai)
+        <br>
+        Abajo al centro: imagen ilustrativa de un hogar con lavadora de burbujas ultrafinas incorporada (Foto cortesía de TOSHIBA LIFESTYLE PRODUCTS & SERVICES CORPORATION)
+        <br>
+        Abajo derecha: cuarto de baño con ducha de burbujas ultrafinas (Foto cortesía de LIXIL)
+    </p>
+
+    <!-- Texto descriptivo completo -->
+    <p class="justificado">
+        La tecnología japonesa de «burbujas ultrafinas» está captando el interés dentro y fuera del país. Se trata de unas burbujas tan diminutas que no se ven a simple vista (menores de 1 μm) y que poseen una alta capacidad de limpieza porque se meten entre los intersticios de las cosas.
+        En Japón, se han adoptado rápidamente en diversos sectores industriales y su incorporación en duchas, lavadoras y sistemas de agua caliente significa que ahora se utilizan en los sistemas de agua domésticos. En este artículo hablaremos sobre los cambios en el estilo de vida que pueden aportar estas burbujas ultrafinas.
+        <strong>¿Qué son las burbujas ultrafinas?</strong><br>
+        Son una tecnología japonesa revolucionaria de burbujas considerablemente más pequeñas que las que podemos ver normalmente. Las «burbujas finas» se dividen en dos tipos: las «microburbujas», con un diámetro entre 1 μm (= 0,001mm) y 100 μm, y las «burbujas ultrafinas» de diámetro inferior a 1 μm.
+    </p>
+</div>
+
+                    <div class="boxinn">
+    <h3 style="margin-bottom: 5px;">¿Por qué aprender japonés en 2025? Uno de los idiomas del futuro</h3>
+    
+    <p style="text-align: justify; margin-top: 0; line-height: 1.8;">
+        ¿Qué te imaginas cuando escuchas la palabra "robot"? El concepto que la mayoría de la gente tiene de los robots es el de ayudantes prácticos, eficientes o perfectos, y ya hay robots que desempeñan un papel clave en lugares de trabajo como fábricas, hospitales y zonas de construcción. Sin embargo, en Japón hay otros tipos de robots que despiertan nuestro interés. Se trata de robots que tienen una personalidad encantadora y de los que todos quieren ser amigos. Veamos cómo surgieron estos robots y qué los hace populares.
+        <strong>Robots de entretenimiento: Los primeros robots amigos</strong><br>
+        El primer robot que surgió en Japón y que no estaba diseñado para ayudar en el trabajo fue un robot de entretenimiento desarrollado por una empresa japonesa. Este robot de cuatro patas, capaz de reconocer a su dueño y comunicarse con él, salió al mercado en 1999. Fue un gran éxito, ya que se agotó nada más salir a la venta. Se trata del primer ejemplo de robot doméstico que no fue fabricado únicamente para ayudar con el trabajo o las tareas domésticas.</p>
+
+   <div class="banner" style="margin-top: 1px;">
+  <img id="banner-img" src="image/innovacion/promocional1.jpg" alt="Banner promocional" style="width: 100%; height: auto;">
+</div>
+
+<script>
+  const imagenesBanner = [
+    "image/innovacion/promocional.jpg",
+    "image/innovacion/promocional1.jpg",
+    "image/innovacion/promocional2.jpg",
+    "image/innovacion/promocional3.jpg"
+  ];
+
+  let indice = 0;
+  const banner = document.getElementById("banner-img");
+
+  // Cambia la imagen cada 4 segundos
+  setInterval(() => {
+    indice = (indice + 1) % imagenesBanner.length;
+    banner.style.opacity = 0; // efecto de desvanecimiento
+    setTimeout(() => {
+      banner.src = imagenesBanner[indice];
+      banner.style.opacity = 1;
+    }, 500);
+  }, 4000);
+</script>
+</div>
+        </main>
+        
+        <!--Blog-->
+        
+           <section class="bloginn">
+                <h2>Blog / Noticias</h2>
+             <div class="blog-containerinn">
+        
+                <!-- Noticia 1 -->
+                    <div class="noticia">
+                         <img src="image/noticia1.jpg" alt="sellos">
+                            <p> Un hanko o inkan es un sello personal que se usa tradicionalmente en Japón como sustituto de una firma manuscrita. Quizás te preguntes cuál es la diferencia entre hanko e inkan . Originalmente, el término "hanko" se refería a la herramienta en sí, mientras que "inkan" se refería a la impresión o marca que dejaba el sello. Hoy en día, los hablantes nativos de japonés suelen usar estos dos términos indistintamente. Sin embargo, según el contexto, un término puede ser más apropiado que el otro. En conversaciones informales, se usa comúnmente "hanko", mientras que "inkan" suele tener un tono más formal..
+                            </p>
+                    </div>
+
+                <!-- Noticia 2 -->
+                    <div class="noticiainn">
+                        <img src="image/noticia2.jpg" alt="Noticia 2">
+                        <p>Debido al crecimiento de la población, entre otros factores, el desperdicio de alimentos se ha convertido en un gran problema en todo el mundo. En Japón, las fábricas, las tiendas de comestibles y los restaurantes se esfuerzan por utilizar los recursos de la manera más eficiente posible, pero es inevitable que haya cierta cantidad de desperdicio de alimentos
+                        </p>
+            </div>
+
+                <!-- Noticia 3 -->
+                    <div class="noticiainn">
+                        <p class="titulo-noticia"> Japón es líder mundial en robótica e inteligencia artificial </p>
+                        <p> Tecnología en Japón te trae las últimas noticias sobre avances tecnológicos, innovación japonesa y noticias de actualidad en Japón. Explora cómo Japón lidera el desarrollo en robótica, inteligencia artificial y gadgets futuristas, transformando el mundo con sus ideas revolucionarias. Desde Akihabara, el epicentro de la tecnología y la cultura geek, descubre tendencias únicas y mantente al día con los progresos más relevantes en tecnología en Japón y las innovaciones que están marcando el futuro
+                        </p>
+                     </div>
+
+                 </div>
+            </section>
+
+        <!--Sobre Nosotros-->
+
+            <section class="nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Bienvenido a nuestro portal, un espacio dedicado a compartir la riqueza cultural, tecnológica, natural y espiritual de Japón. Nuestro principal objetivo es promover el interés por conocer este fascinante país, ya sea desde su milenaria tradición hasta sus impresionantes avances modernos. Aquí encontrarás información, noticias, recursos interactivos y contenido educativo que te acercará a Japón sin importar en qué parte del mundo te encuentres.
+                   Este proyecto ha sido desarrollado como parte del Programa de Ingeniería Multimedia de la Universidad Nacional Abierta y a Distancia (UNAD), dentro del curso 213025. La iniciativa busca combinar el conocimiento académico con la pasión por la cultura japonesa, utilizando herramientas digitales para ofrecer una experiencia informativa, interactiva y visualmente atractiva.</p>
+            </section>
+
+        <!--Pie de Pagina-->
+
+         <footer>
+            <h2>Síguenos en nuestras redes</h2>
+            <div class="redes-sociales">
+                 <a href="https://www.facebook.com/" target="_blank">
+                    <img src="image/redes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="image/redes/x.png" alt="X">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="image/redes/instagram.png" alt="Instagram">
+                 </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img src="image/redes/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/" target="_blank">
+                    <img src="image/redes/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://wa.me/" target="_blank">
+                    <img src="image/redes/youtube.jpg" alt="WhatsApp">
+                </a>
+            </div>
+             <p class="copyright">Copyright © 2025 Rubén Darío Ávila Sandoval All Rights Reserved.</p>
+    
+        </footer>
+     
+    <script>
+function toggleContenido(boton) {
+    const box = boton.closest('.boxinn');
+    const contenido = box.querySelector('.contenido-expandido');
+    
+    if (contenido.style.display === "none" || contenido.style.display === "") {
+        contenido.style.display = "block";
+        boton.textContent = "Leer menos...";
+    } else {
+        contenido.style.display = "none";
+        boton.textContent = "Leer más...";
+    }
+}
+</script>
+     
+    </body>
+     </html>

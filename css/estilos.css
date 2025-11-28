@@ -1,0 +1,1235 @@
+
+/* Importar fuente para títulos desde Google Fonts */
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+*/
+body{
+    /* Fuentes para el sitio web*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color:#F5F5F5;
+
+    }
+    /* Estilos que se aplicarán para la cabecera*/
+    header{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(214, 69, 69);
+            
+            
+        }
+    .mensaje-bienvenida {
+  margin: 3.5em auto;
+  padding: 1em 1em;
+  font-size: 1.8em;
+  color: #c00;
+  background: #fff5f5;
+  border-radius: 8px;
+  max-width: 450px;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  /* Para el scroll horizontal */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 0.5em; /* Fija la altura para que no brinque */
+}
+.mensaje-bienvenida span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+
+
+
+   .mensaje-bienvenida {
+  margin: 1em auto;
+  padding: 1em 2em;
+  font-size: 1.4em;
+  color: #c00;
+  background: #fff5f5;
+  border-radius: 8px;
+  max-width: 450px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+ 
+
+    .banner-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+    header .bandera,
+    header .logo {
+                    flex: 0 0 auto; /* Tamaño fijo para imágenes */
+                  }
+
+
+    header .titulo {
+                    /*font-family: 'Georgia', serif; */
+                    font-size: 2em;
+                    font-weight: bold;
+                    text-align: center;
+                    background: #d64545;
+                    color: #ffffff;
+                    flex: 1 1 auto;
+                    }
+     
+
+    header nav {
+                flex: 1 1 100%;          /* Ocupa todo el ancho disponible */
+                display: flex;
+                justify-content: center; /* Centra el menú horizontalmente */
+                }
+
+    header nav ul{
+                    list-style: none;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                    margin: 10px 0;
+                    padding: 0;
+                    display: flex;
+                   }
+
+    header nav ul li{
+                  /*  list-style: none; */
+                    margin: 0;
+                  /*  padding: 30px; */
+                    }
+    
+    header nav  ul li a{
+                        color: #ffffff;
+                        font-weight: bold;
+                       /* font-style: italic;*/
+                       padding: 6px 10px;
+                       border-radius: 5px;
+                        text-decoration: none;
+                        transition: background 0.3s ease;
+                       }
+
+    header nav ul li a:hover {/* efecto resaltador en los vinvulos*/
+                            background: rgba(255,255,255,0.2);
+                        }
+    
+    header .idioma select{
+                            margin: 10px;
+                            padding: 5px;
+                            border-radius: 5px ;
+                            color: #ffffff;
+                            background-color: rgb(214, 69, 69);
+                          }   
+    header .idioma select,
+    header .idioma option {
+                            background: #fff;
+                            color: #222;        /* Texto oscuro sobre fondo claro */
+                            border: 1px solid #d64545;
+                            }
+    
+    
+            .logo-idioma {
+                            display: flex;
+                            flex-direction: column;   /* Idioma debajo del logo */
+                            align-items: flex-end;    /* Pegados a la derecha */
+                        }
+            .logo {
+                    display: flex;
+                    flex-direction: column; /* apila logo + idioma */
+                    align-items: center;
+                    text-align: center;
+                    }
+
+
+            .logo img {
+                        max-height: 200px;
+                        height: auto;
+                        object-fit: contain;
+                        }
+
+            .logo .idioma {
+                            margin-top: 5px; /* espacio entre logo e idioma */
+                            }
+
+            .logo .idioma select {
+                                    padding: 5px;
+                                    font-size: 14px;
+                                    }
+
+    
+                
+    /* Selector de idioma */
+    header .idioma select {
+                            margin-top: 5px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: #ffffff;
+                            background-color: rgb(214, 69, 69);
+                            border: 1px solid #fff;
+                            }
+                          
+
+    header.logo img{
+                     max-width:100%;
+                     object-fit: contain;
+                    }
+    /* Grid de secciones */
+
+     .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            padding: 10px;
+          }
+        
+    .box{
+            background: #f7c769;
+            padding: 10px;
+            text-align: left;
+            border-radius: 5px;
+          /*  font-family: 'Georgia', serif;
+            font-weight: bold; */
+          }
+
+    .box h3 {
+              font-size: 1.4em;
+              text-align: center;
+              color: #000000;
+            }
+
+    .box p {
+             font-size: 1em;
+             color: #333333;
+           }
+
+    .box img {
+                width: 100%;         /* que la imagen se ajuste al ancho de la caja */
+                height: 150px;       /* altura fija */
+                object-fit: cover;   /* recorta la imagen sin deformarla */
+                border-radius: 10px;  /* esquinas redondeadas */
+                
+              }
+    .blog {
+            background: #f7c769;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+            }
+
+    .blog h2 {
+             color:#000000;
+             }
+
+    .blog-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    }
+    
+    .noticia {
+                flex: 1 1 calc(33% - 20px);
+                background: #fff;
+                padding: 10px;
+                border-radius: 5px;
+            
+              } 
+    .noticia img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+    .titulo-noticia {
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    }
+    
+    .nosotros{
+                background: #f7c769;
+                padding: 15px;
+                margin-top: 10px;
+                text-align: center;
+              }
+    footer {
+                background: #f7c769;
+                padding: 20px;
+                text-align: center;
+                
+            }
+
+    .redes-sociales {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px; /* Espacio entre íconos */
+                    flex-wrap: wrap; /* Por si en pantallas pequeñas no caben todos */
+                    }
+
+    
+
+    .redes-sociales img {
+                        width: 45px;
+                        height: 45px;
+                        transition: transform 0.2s ease;
+                        }
+    
+     .redes-sociales img:hover {
+                                    transform: scale(1.2);
+                                }                   
+
+    /* ===== Aviso emergente temporal ===== */
+        #aviso {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #fff;
+                color: #000000;
+                padding: 10px 15px;
+                border-radius: 8px;
+                font-weight: bold;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+                z-index: 9999;
+                }
+        /* Cuando se activa */
+                 #aviso.mostrar {
+                                opacity: 1;
+                                transform: translateY(0);
+                                }       
+
+     /* === MEDIA QUERIES PARA VISUALIZAR EN DIFERENTES DIAPOSITIVOS "PANTALLAS" === */
+
+        /* Tablets y móviles */
+                @media (max-width: 900px) {
+                header {
+                        flex-direction: column;       /* Todo en columna */
+                       
+                        }
+
+                header .titulo {
+                                margin: 10px 0;
+                                font-size: 1.6em;
+                                text-align: center;
+                                }
+
+
+                .titulo {
+                            margin: 10px 0;
+                            font-size: 1.6em;
+                            text-align: center;
+                        }
+
+                header nav {
+                            flex: 1 1 100%;             /* Menú ocupa toda la fila */
+                            display: flex;
+                            justify-content: center;    /* Centrado horizontal */
+                            }
+
+                header nav ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;    /* Que los <li> estén centrados */
+                                gap: 20px;                  /* Espacio uniforme */
+                                 list-style: none;
+                                margin: 10px 0;
+                                padding: 0;
+                                background: #d64545;    /* Rojo oscuro, el recomendado para accesibilidad */
+                                }
+
+                header nav ul li {
+                                    margin: 5px 0;
+                                    }
+                header nav ul li a {
+                                    color: #ffffff;
+                                    font-weight: bold;
+                                    text-decoration: none;
+                                    padding: 6px 10px;
+                                    border-radius: 5px;
+                                    transition: background 0.3s ease;
+                                    }
+            
+
+                header .idioma {
+                                margin-top: 10px;
+                                }
+
+                header .logo,
+                header .bandera {
+                                    margin: 5px 0;
+                                }
+
+                header .bandera img {
+                                        max-width: 120px;
+                                        height: auto;
+                                }
+
+                .logo-idioma {
+                              /*  display: flex;
+                              /*  flex-direction: column;   /* Idioma debajo del logo */
+                              /*  align-items: flex-end;    /* Todo alineado a la derecha */
+                              /*  margin-left: auto;        /* Empuja el bloque a la derecha */
+
+                                align-items: center;  /* Logo + idioma centrados en móviles */
+                                margin-left: 0;
+                                margin-top: 10px;
+                             }
+
+
+                .logo-idioma .logo img {
+                                        max-height: 100px;
+                                        object-fit: contain;
+                                        }
+
+                .logo-idioma .idioma {
+                                        margin-top: 5px;
+                                        }
+             }
+
+/* Celulares pequeños */
+@media (max-width: 600px) {
+                            header .titulo {
+                                            font-size: 1.4em;
+                                            }
+
+                            header nav ul li a {
+                                                font-size: 0.95em;
+                                                }
+                            }
+     
+     
+     
+     
+                                /* Contenedor central */
+    .contenedor {
+                    max-width: 900px;   /* ancho controlado */
+                    margin: 0 auto;
+                    padding: 0;
+                }
+     
+     
+     
+
+     
+     
+
+      .grid .box h3 { /* cambia formato de texto en los títulos en box*/
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        color: #000000;       
+                        margin: 10px 0;
+                        font-family: 'Georgia', serif;
+                        text-transform: uppercase;  /* todo en mayúsculas */
+                        letter-spacing: 2px;        /* más espacio entre letras */
+                        text-align: center; /* Alinea los sutitulos al centro*/
+                    }
+
+      .grid .box p {/*Cambia formato de texto en el box en comentarios */
+                    font-size: 1em;
+                    color: #333333;       /* gris oscuro */
+                    margin: 5px 0;
+                    font-family: 'Georgia', serif;
+                    line-height: 1.5;     /* interlineado */
+                   }
+
+     /* Secciones Grandes*/
+     .blog, .nosotros, .footer {
+                                 text-align:center;
+                                 
+                               }
+        .noticia p {
+                        margin-top: 10px;
+                        font-size: 14px;
+                        line-height: 1.4;
+                    }
+
+          footer h2 {
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                    }
+     /*Pagina Tradiciones */
+main {
+        text-align: center;
+    }
+
+.destacado {
+            background-color: #f7c769; /* color de relleno fondo carrusel*/
+            /*padding: 5px;*/ /* espacio de la margen del carrusel*/
+            }
+
+.destacado h1 { /* Formato de seccion donde se encuetra el carrusel*/
+                font-size: 2em;
+                margin: 0;
+                color: #000000;
+                font-weight: bold;
+               }
+
+.destacado p {
+                font-size: 1.2em;
+                margin: 10px 0 0 0;
+                color: #333333;
+            }
+
+.bloque {
+            padding: 20px;
+            margin: 10px 0;
+            color: #000000;
+            border-radius: 8px;   /* opcional: esquinas redondeadas */
+        }
+
+
+        /* ===== Bloques con imagen + texto ===== */
+.bloque-contenido img {
+                        width: 8cm;
+                        height: 8cm;
+                        border-radius: 10px;
+                        object-fit: cover;   /* mantiene proporción recortando si es necesario */
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                        transition: transform 0.3s ease;
+                        }
+
+.bloque-contenido img:hover {
+                                transform: scale(1.1);
+                            }
+
+.bloque-contenido {
+                    display: flex;
+                    align-items: flex-start;  /* alinea arriba */
+                    gap: 20px;
+                    margin-top: 15px;
+                    }
+
+
+.bloque-contenido .texto {
+                            flex: 2;
+                            text-align: justify;
+                            font-size: 1.1em;
+                            line-height: 1.6;
+                        }
+
+.bloque-contenido .imagenes {
+                                display:flex
+                                flex-direction: column-reverse; /* una debajo de otra */
+                                gap: 10px;
+                                flex: 0;
+                            }
+
+.bloque-contenido .imagenes img { /* Imagenes de la ceremonia del te*/
+                                    width: 8 cm;       /* tamaño fijo */
+                                    height: 8 cm;
+                                    border-radius: 10px;
+                                    object-fit: cover;
+                                }
+
+/* Alternar imágenes */
+.bloque.izquierda .bloque-contenido {
+                                        flex-direction: row;
+                                    }
+
+.bloque.derecha .bloque-contenido {
+                                    flex-direction: row-reverse;
+                                }
+
+.bloque h2 { /* Formato para el título*/
+                font-size: 1.8em;                  
+                font-weight: bold;                 
+                font-family: 'Georgia', serif;     
+                color: #4a1c1c;                    
+                margin-bottom: 10px;
+                text-align: left;                  /* alineado a la izquierda */
+                text-transform: uppercase;         /* opcional: todo en mayúsculas */
+                letter-spacing: 1px;               /* más espacio entre letras */
+                }
+
+.bloque p { /* formato para el texto*/
+                font-size: 1.1em;                   /* un poco más grande que el normal */
+                font-family: 'Georgia', serif;  /* distinta fuente del título */
+                text-align: justify;                /* texto justificado */
+                line-height: 1.6;                   /* interlineado cómodo */
+                color: #2c2c2c;
+                margin: 0;
+                }
+
+.bloque-contenido .texto h3 { /* texto tradicion del té*/
+                                font-size: 1.3em;
+                                color: #4a1c1c;         
+                                margin-top: 5px;
+                                margin-bottom: 1px;
+                                font-family: 'Georgia', serif;
+                            }
+
+/* Colores de bloques */
+.rosa { background-color: #f8dada; }
+.rosado { background-color: #f3b2b2; }
+.rojo { background-color: #f59d9d; }
+.verde { background-color: #e5c9c9; }
+
+/* Footer */
+
+footer h3 {
+             margin: 0;
+            font-size: 1.3em;
+            font-family: 'Georgia', serif;;
+          }
+
+
+
+        
+        /* Enlace activo (deshabilitado) */
+    header nav ul li a.active {
+        color: #FFD700;          /* Amarillo brillante para resaltar */
+        pointer-events: none;    /* Desactiva el clic */
+        cursor: default;         /* Cambia el cursor */
+        font-weight: bold;
+        text-decoration: underline; /* Subrayado opcional */
+        }
+
+    header nav ul li a,
+header nav ul li a:visited {
+  color: #ffffff;
+  background: transparent;
+  font-weight: bold;
+}    
+
+       nav ul li a:visited,
+.idioma select,
+.idioma option {
+                color: #222222;         /* Muy oscuro */
+                background: #fff;       /* Muy claro */
+                font-weight: bold;
+                }
+
+nav ul li a.active,
+nav ul li a:hover {
+                    background: #af2525;    /* Rojo más oscuro para activo/hover */
+                    color: #fff;
+                    } 
+
+nav ul li a:focus, nav ul li a:hover {
+                                        outline: 2px solid #2525af;
+                                        text-decoration: underline;
+                                        }
+
+
+/* Aplica a todos los enlaces del menú */
+nav ul li a,
+nav ul li a:visited {
+                    color: #ffffff;           /* Blanco para todos los enlaces */
+                    background: transparent;
+                    font-weight: bold;
+                    }
+
+/* Visual para enlace seleccionado o con el cursor encima */
+nav ul li a.active,
+nav ul li a:hover,
+nav ul li a:focus {
+                    background: #af2525;      /* Rojo oscuro para fondo de activo/hover/foco */
+                    color: #fff;
+                    outline: 2px solid #2525af; /* Visible para Tab */
+                    text-decoration: underline;
+                    }
+
+/* ===== slide fotografias seccion Tradiciones Japonesas===== */
+.carrusel {
+            overflow: hidden;
+            width: 100%;
+            max-width: 120%; /* ancho máximo del carrusel */
+            margin: 20px auto;
+            border-radius: 10px;
+            }
+
+.carrusel-contenido {
+                        display: flex;
+                        width: calc(500px * 8); /* ancho total (número imágenes * ancho imagen) */
+                        animation: desplazar 1s linear infinite;
+                        }
+
+.carrusel img {
+                flex: 0 0 auto;       /* evita que se encojan */
+                height: 100%;         /* ocupa todo el alto del carrusel */
+                max-height: 250px;
+                width: auto;          /* respeta proporción */
+                object-fit: contain;  /* muestra la imagen completa sin recortarla */
+                background: #000000;     /* relleno detrás si sobra espacio */
+                margin: 0;             /* elimina espacios entre imágenes */
+                }
+
+/* Animación */
+@keyframes desplazar {
+                        from { transform: translateX(2); }
+                        to   { transform: translateX(-50%); } /* se desplaza la mitad para que repita */
+                        }
+
+.carrusel-contenido:hover {
+                            animation-play-state: paused;
+                            }
+
+/* ===== Carrusel Infinito ===== */
+.carrusel {
+                overflow: hidden;
+                width: 100%;
+                height: 250px;   /* altura fija de la división */
+                margin: 20px auto;
+                position: relative;
+                background: #fff;
+                display: flex;
+                align-items: center; /* centra imágenes verticalmente */
+                }
+.carrusel-contenido {
+                    display: flex;
+                    animation: desplazar 25s linear infinite;
+                    }
+
+/* Página Estética */
+
+.video-embed {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.video-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
+/* ===== Galería de imágenes en cada bloque ===== */
+.bloque .galeria {
+    display: flex;
+    justify-content: center;   /* centra las fotos */
+    gap: 15px;                 /* espacio entre fotos */
+    flex-wrap: wrap;           /* si no caben, bajan a la siguiente línea */
+    margin-top: 15px;
+}
+
+.bloque .galeria img {
+    width: 45%;                /* cada imagen ocupa casi la mitad */
+    max-width: 300px;          /* no se pasan de 400px */
+    height: 200px;             /* altura fija */
+    object-fit: cover;         /* recorte para que no se deformen */
+    border-radius: 10px;       /* esquinas suaves */
+    box-shadow: 0 4px 8px rgba(216, 3, 3, 0.2); /* sombreado elegante */
+    transition: transform 0.3s ease;
+}
+
+.bloque .galeria img:hover {
+    transform: scale(1.8); /* efecto zoom al pasar el mouse */
+}
+
+/* ===== Bloque con imágenes a los lados y texto en medio ===== */
+.bloque-contenido {
+    display: flex;
+    align-items: center;    /* centra verticalmente */
+    gap: 20px;              /* espacio entre elementos */
+    margin-top: 15px;
+}
+
+.bloque-contenido .imagen img {
+    width: 200px;           /* tamaño fijo de imágenes */
+    height: 200px;
+    object-fit: cover;      /* recorta sin deformar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bloque-contenido .texto {
+    flex: 1;                /* ocupa todo el espacio disponible */
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ===== Carrusel de fotos ===== */
+.carrusel {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;   /* altura del carrusel */
+    margin: 20px auto;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+}
+
+.carrusel-contenido {
+    display: flex;
+    animation: deslizar 20s linear infinite; /* velocidad del scroll */
+}
+
+.carrusel-contenido img {
+    flex: 0 0 auto;          /* no se encogen */
+    width: 300px;            /* ancho fijo de las imágenes */
+    height: 250px;           /* mismo alto que el carrusel */
+    object-fit: cover;       /* recorte sin deformar */
+    border-radius: 10px;
+}
+
+/* Animación del carrusel */
+@keyframes deslizar {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); } /* se desplaza la mitad para repetir */
+}
+
+/* Pausa la animación al pasar el mouse */
+.carrusel-contenido:hover {
+    animation-play-state: paused;
+}
+
+/* 🔹 Al pasar el mouse sobre una imagen: zoom */
+.carrusel-contenido img:hover {
+    transform: scale(1.5);
+    z-index: 2; /* asegura que la imagen ampliada quede encima */
+}
+
+
+/* Página Innovacion */
+
+
+
+/* Contenedor principal */
+.contenedorinn {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid de secciones */
+.gridinn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+/* Caja de contenido */
+.boxinn {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Las cajas crecen iguales*/
+    box-sizing: border-box;
+    margin-bottom: 20px; /* o menos si deseas aún más compacto */
+}
+
+    .boxinn:last-child {
+      margin-bottom: 0;
+    }
+
+.boxinn img {
+    margin-top: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.intro-text {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Sección Blog */
+.bloginn {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.bloginn h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-containerinn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.noticia, .noticiainn {
+    width: 300px;
+    background-color: #fdfdfd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.noticia img, .noticiainn img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.titulo-noticia {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .gridinn {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-containerinn {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.boxinn {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.boxinn img {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.imagenes-adicionales img {
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    display: inline-block;
+}
+.contenido-expandido {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/***** GASTRONOMÍA: GRID DE PLATOS Y BEBIDAS *****/
+.platos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  grid-template-rows: repeat(3, 1fr);    /* 3 filas */
+  gap: 8px;
+  max-width: 100%;
+  width: 100%;
+  margin: 5px auto 5px auto;
+  padding: 10px;
+}
+
+.plato {
+  background: #f7c769;
+  padding: 20px 12px 32px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(214,69,69,0.12);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.plato:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 20px rgba(214,69,69,0.25);
+}
+
+.nombre-plato {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #ab2410;
+  letter-spacing: 1px;
+}
+
+.plato img {
+  width: 640px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 9px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  margin-bottom: 6px;
+}
+
+.preparacion {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: unset;        /* No uses top */
+  bottom: 18px;      /* Justo arriba del borde inferior de la imagen (ajusta px si es necesario) */
+  transform: translate(-50%, 0);
+  background: #fcf7e9;
+  color: #1b1b1b;
+  padding: 13px 15px;
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 320px;
+  box-shadow: 0 7px 22px rgba(214,69,69,0.13);
+  font-size: 1em;
+  z-index: 20;
+  text-align: left;
+  opacity: 0.96;
+  white-space: normal;
+  word-break: break-word;
+  overflow: auto;
+  max-height: 150px;
+}
+
+.plato:hover .preparacion,
+.plato:focus .preparacion {
+  display: block;
+  animation: fadeIn .21s;
+}
+
+
+@media (max-width: 900px) {
+  .platos-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    max-width: 98%;
+    gap: 20px;
+  }
+
+  .plato img {
+    width: 94vw;
+    max-width: 320px;
+    height: 112px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, 18px);}
+  to { opacity: 0.92; transform: translate(-50%, 0);}
+}
+/***** FIN BLOQUE GASTRONOMIA *****/
+
+/* ======== BLOG Y NOTICIAS ======== */
+
+.blog-section {
+  padding: 60px 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.blog-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #b30000;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #b30000;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.blog-item {
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.blog-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-item h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 15px 0 10px;
+}
+
+.blog-item p {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 15px 15px;
+  text-align: justify;
+}
+
+.btn-leer {
+  display: inline-block;
+  background-color: #b30000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leer:hover {
+  background-color: #800000;
+}
+
+/* Colores suaves por sección */
+.noticias { background-color: #fff7f7; }
+.curiosidades { background-color: #f9fff7; }
+.cultura-pop { background-color: #f7f9ff; }
+.viajes { background-color: #fffdf7; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 40px 5%;
+  }
+
+  .blog-item img {
+    height: 180px;
+  }
+}
+
+
+/* slide*/
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9; /* mantiene proporción visual adaptable */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #000;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+/* Imagen mostrada completa sin recorte */
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* cambia de cover → contain */
+  display: block;
+  background: #000; /* evita bordes blancos */
+}
+
+/* Botones */
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+  background: rgba(255,255,255,1);
+}
+
+button.prev { left: 15px; }
+button.next { right: 15px; }
+
+.slider-simple {
+  width: 800px;          /* ancho fijo (ajústalo si quieres) */
+  height: 450px;         /* alto fijo (mismo tamaño para todas) */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #000;      /* color de fondo si hay bordes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-simple img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* recorta ligeramente pero mantiene proporción */
+  display: block;
+  transition: opacity 1s ease-in-out; /* efecto de fundido */
+}
+
+.slider-kenburns {
+  width: 800px;
+  height: 450px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-kenburns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 1s ease-in-out, transform 8s ease-in-out;
+}
+
+@keyframes zoomEfecto {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); } /* zoom suave */
+  100% { transform: scale(1); }
+}
+
+/* Innovacion*/

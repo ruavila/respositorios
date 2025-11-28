@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tradición en la Cultura Japonesa</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="image/bandera.png" type="image/png">  <!--Ícono en la pestaña del navegador-->
+    </head>
+        
+    <!-- Aviso emergente -->
+    <div id="aviso" class="aviso-oculto" data-i18n="aviso-construccion">
+        ¡En construcción, disculpe la molestia!
+    </div>
+
+    <script>
+    function mostrarAviso() {
+        let aviso = document.getElementById("aviso");
+        aviso.classList.add("mostrar");
+
+        // Ocultar después de 3 segundos
+        setTimeout(() => {
+            aviso.classList.remove("mostrar");
+        }, 3000);
+    }
+    </script>
+    
+    <body>
+        <!--Aqui va la cebecera-->
+        <header>
+            <div class="bandera">
+                <img src="image/bandera.png" width="200" height="100" alt="Bandera Japón" title="Bandera Japón">
+            </div>
+
+            <div class="titulo" data-i18n="titulo-tradiciones"> 
+                Tradiciones de la Cultura Japonesa
+            </div>
+
+            <div class="logo">
+                <img src="image/logo.png" width="200" height="100" alt="Japón en Japonés" title="Japón en Japonés">
+                <div class="idioma">
+                    <label for="idioma" class="sr-only" data-i18n="label-idioma">Seleccionar idioma</label>
+                    <select id="idioma">
+                        <option value="es" selected>Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="menu-inicio">Inicio</a></li>
+                    <li><a href="tradiciones.html" class="active" data-i18n="menu-tradiciones">Tradiciones</a></li>
+                    <li><a href="estetica.html" data-i18n="menu-estetica">Estética</a></li>
+                    <li><a href="innovacion.html" data-i18n="menu-innovacion">Innovación</a></li>
+                    <li><a href="gastronomia.html" data-i18n="menu-gastronomia">Gastronomía</a></li>
+                    <li><a href="blog.html" data-i18n="menu-blog">Blog</a></li>
+                    <li><a href="#" onclick="mostrarAviso()" data-i18n="menu-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Hero imagnes de Japón-->
+        <section class="banner">
+            <div>
+                <img src="image/banner.png" width="100%" height="150" alt="badera Japón" title="Badera Japón">
+            </div>
+        </section>
+
+        <!--Pagina Tradiciones de la cultura Japonesa-->   
+        <!-- Contenido Tradiciones -->
+        <main>
+            <section class="destacado">
+                <h1 data-i18n="tradiciones-titulo-principal">Tradiciones Japonesas</h1>
+                <div class="carrusel">
+                    <div class="carrusel-contenido">
+                        <!-- 6 imágenes reales -->
+                        <img src="image/tradiciones/bon dori.png" alt="Tradición 1">
+                        <img src="image/tradiciones/comerconpalillos.png" alt="Tradición 2">
+                        <img src="image/tradiciones/kodomo-no-hi.png" alt="Tradición 3">
+                        <img src="image/tradiciones/quitarseloszapatos.png" alt="Tradición 4">
+                        <img src="image/tradiciones/seijin.png" alt="Tradición 5">
+                        <img src="image/tradiciones/Shôgatsu.png" alt="Tradición 6">
+
+                        <!-- Se repiten para el bucle infinito -->
+                        <img src="image/tradiciones/bon dori.png" alt="Tradición 1">
+                        <img src="image/tradiciones/comerconpalillos.png" alt="Tradición 2">
+                        <img src="image/tradiciones/kodomo-no-hi.png" alt="Tradición 3">
+                        <img src="image/tradiciones/quitarseloszapatos.png" alt="Tradición 4">
+                        <img src="image/tradiciones/seijin.png" alt="Tradición 5">
+                        <img src="image/tradiciones/Shôgatsu.png" alt="Tradición 6">
+                    </div>
+                </div>
+            </section>
+
+            <section class="bloque rosa izquierda">
+                <h2 data-i18n="te-titulo">Ceremonía del té</h2>
+                <div class="bloque-contenido">
+                    <!-- Contenedor de imágenes -->
+                    <div class="imagenes">
+                        <img src="image/tradiciones/te/te1.jpg" alt="Ceremonia del té 1">
+                        <img src="image/tradiciones/te/te2.jpg" alt="Ceremonia del té 2">
+                        <img src="image/tradiciones/te/te3.jpg" alt="Ceremonia del té 3">
+                    </div>
+
+                    <!-- Contenedor de texto -->
+                    <div class="texto">
+                        <h3 data-i18n="te-historia-titulo">Historia y Origen</h3>
+                        <p data-i18n="te-historia-p1"><strong>China a Japón:</strong> El té llegó a Japón desde China alrededor del siglo IX, introducido por monjes budistas zen.</p>
+                        <p data-i18n="te-historia-p2"><strong>Desarrollo en Japón:</strong> Inicialmente usado para medicina y solo accesible a la nobleza, el té se convirtió en un ritual para fortalecer vínculos.</p>
+                        <p data-i18n="te-historia-p3"><strong>Sen no Rikyu:</strong> Este monje budista y maestro del té, del siglo XVI (periodo Azuchi-Momoyama), es considerado el fundador de la ceremonia del té tal como la conocemos hoy, simplificando la práctica y enfocándola en la espiritualidad zen.</p>
+
+                        <h3 data-i18n="te-filosofia-titulo">Filosofía y Principios</h3>
+                        <p data-i18n="te-filosofia-p1">La ceremonia del té japonesa se rige por los principios del budismo zen, que se manifiestan en cuatro virtudes fundamentales:</p>
+                        <p data-i18n="te-filosofia-wa"><strong>Armonía (Wa):</strong> Se busca el equilibrio en la decoración, los movimientos y el entorno.</p>
+                        <p data-i18n="te-filosofia-kei"><strong>Respeto (Kei):</strong> Se manifiesta el respeto hacia los invitados, el anfitrión y la naturaleza.</p>
+                        <p data-i18n="te-filosofia-sei"><strong>Pureza (Sei):</strong> Tanto la limpieza de los utensilios como la atmósfera deben ser impecables.</p>
+                        <p data-i18n="te-filosofia-jaku"><strong>Tranquilidad (Jaku):</strong> La ceremonia invita a la paz interior, la contemplación y la atención plena.</p>
+
+                        <h3 data-i18n="te-aspectos-titulo">Aspectos Clave de la Ceremonia</h3>
+                        <p data-i18n="te-aspectos-matcha"><strong>El té Matcha:</strong> El té verde en polvo es el protagonista, preparado con gran atención a cada detalle.</p>
+                        <p data-i18n="te-aspectos-utensilios"><strong>Los Utensilios (Chadougus):</strong> Herramientas especializadas se utilizan con movimientos precisos y estéticos.</p>
+                        <p data-i18n="te-aspectos-espacio"><strong>El Espacio:</strong> La sala de té, con su decoración minimalista y a menudo rodeada de jardines, está diseñada para crear una atmósfera de tranquilidad.</p>
+                        <p data-i18n="te-aspectos-anfitrion"><strong>El Anfitrión (Dōshu o Menjo):</strong> El anfitrión, con un título que certifica su conocimiento, ejecuta los pasos de la ceremonia con maestría.</p>
+                        <p data-i18n="te-aspectos-invitados"><strong>Los Invitados:</strong> Los invitados participan activamente, con gestos específicos como girar el cuenco antes de beber para mostrar respeto.</p>
+                        <p data-i18n="te-aspectos-dulces"><strong>Los Dulces (Wagashi):</strong> Se sirven dulces japoneses para mitigar la intensidad amarga del té.</p>
+
+                        <h3 data-i18n="te-importancia-titulo">Importancia Actual</h3>
+                        <p data-i18n="te-importancia-p1">La ceremonia del té sigue siendo una parte vital de la cultura japonesa. Es una forma de arte refinada y una oportunidad para la conexión personal y la apreciación de la belleza en la fugacidad y la singularidad de cada momento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bloque rosado derecha">
+                <h2 data-i18n="kabuki-titulo">Kabuki y Teatro</h2>
+                <div class="bloque-contenido">
+                    <img src="image/tradiciones/teatro/teatro1.jpg" alt="Kabuki 1">
+                    <div class="texto">
+                        <p data-i18n="kabuki-p1">
+                            El kabuki es una forma tradicional y estilizada de teatro japonés que combina drama, danza y música, 
+                            surgida en el siglo XVII y reconocida como Patrimonio Cultural Inmaterial de la UNESCO. 
+                            Se caracteriza por sus elaborados vestuarios y maquillajes (como el <em>Kumadori</em>), 
+                            la interpretación de todos los papeles por actores masculinos (incluidos los femeninos por los <em>onnagata</em>) 
+                            y un fuerte componente visual y corporal, que permite seguir la trama incluso sin conocer el idioma.
+                        </p>
+                    </div>
+                    <img src="image/tradiciones/teatro/teatro2.jpg" alt="Kabuki 2">
+                </div>
+            </section>
+
+            <section class="bloque verde derecha">
+                <h2 data-i18n="bonsai-titulo">Bonsái y Jardines</h2>
+                <div class="bloque-contenido">
+                    <img src="image/tradiciones/Bonsai/bonsai1.jpg" alt="Bonsái 1">
+                    <div class="texto">
+                        <p data-i18n="bonsai-p1">Bonsái y Jardines se refieren al arte del bonsái, que consiste en cultivar árboles y plantas miniaturizados en macetas mediante técnicas de poda, alambrado y trasplante para recrear la escena de un paisaje natural. Los jardines de bonsái son colecciones de estos árboles en miniatura, que pueden ser expuestos en un jardín o balcón, o ser elementos decorativos en un diseño paisajístico más amplio</p>
+                    </div>
+                    <img src="image/tradiciones/Bonsai/bonsai2.jpg" alt="Bonsái 2">
+                </div>
+            </section>
+        </main>
+
+        <!--Pie de Pagina-->
+        <footer>
+            <h2 data-i18n="footer-siguenos">Síguenos en nuestras redes</h2>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="image/redes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="image/redes/x.png" alt="X">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="image/redes/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img src="image/redes/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/" target="_blank">
+                    <img src="image/redes/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="image/redes/youtube.jpg" alt="YouTube">
+                </a>
+            </div>
+            <p class="copyright">Copyright © 2025 Rubén Darío Ávila Sandoval All Rights Reserved.</p>
+        </footer>
+
+        <!-- Script de traducción multiidioma -->
+        <script>
+        const traducciones = {
+          "es": {
+            "aviso-construccion": "¡En construcción, disculpe la molestia!",
+            "label-idioma": "Seleccionar idioma",
+            "titulo-tradiciones": "Tradiciones de la Cultura Japonesa",
+            "menu-inicio": "Inicio",
+            "menu-tradiciones": "Tradiciones",
+            "menu-estetica": "Estética",
+            "menu-innovacion": "Innovación",
+            "menu-gastronomia": "Gastronomía",
+            "menu-blog": "Blog",
+            "menu-contacto": "Contacto",
+            "tradiciones-titulo-principal": "Tradiciones Japonesas",
+            
+            // Ceremonia del té
+            "te-titulo": "Ceremonía del té",
+            "te-filosofia-titulo":"Filosofía y Principios",
+            "te-historia-titulo": "Historia y Origen",
+            "te-aspectos-titulo":"Aspectos Claves de la Ceremonía",
+            "te-historia-p1":"",
+            "te-historia-p2": "",
+            "te-historia-p3":"",
+            "te-filosofia-p1":"",
+            "te-filosofia-wa":"",
+            "te-filosofia-kei":"",
+            "te-filosofia-sei":"",
+            "te-filosofia-jaku":"",
+            "te-aspectos-matcha":"",
+            "te-aspectos-utensilios":"",
+            "te-aspectos-espacio":"",
+            "te-aspectos-anfitrion":"",
+            "te-aspectos-invitados":"",
+            "te-aspectos-dulces":"",
+            "te-importancia-titulo":"",
+            "te-importancia-p1":"",
+
+            //
+            "kabuki-titulo":"",
+            "kabuki-p1":"",
+            "bonsai-titulo":"",
+            "bonsai-p1":"",
+
+            //
+            "footer-siguenos":"",
+            
+            
+          },
+
+          "en": {
+            "aviso-construccion": "Under construction, sorry for the inconvenience!",
+            "label-idioma": "Select Languaje",
+            "titulo-tradiciones": "Traditions of Japanese Culture",
+            "menu-inicio": "Home",
+            "menu-tradiciones": "Traditions",
+            "menu-estetica": "Aesthetics",
+            "menu-innovacion": "Innovation",
+            "menu-gastronomia": "Gastronomy",
+            "menu-blog": "Blog",
+            "menu-contacto": "Contact",
+            "tradiciones-titulo-principal": "Japanese Traditions",
+            
+            // Ceremonia del té
+            "te-titulo": "Tea Ceremony",
+            "te-historia-titulo": "History and Origin",
+            "te-filosofia-titulo":"Philosophy and Principles",
+            "te-aspectos-titulo":"Key Aspects of the Ceremony",
+            "te-historia-p1":"China to Japan: Tea arrived in Japan from China around the 9th century, introduced by Zen Buddhist monks",
+            "te-historia-p2": "Development in Japan: Initially used for medicinal purposes and only accessible to the nobility, tea eventually became a ritual to strengthen social bonds.",
+            "te-historia-p3":"Sen no Rikyu: This 16th-century Buddhist monk and tea master (Azuchi-Momoyama period) is considered the founder of the tea ceremony as we know it today, having simplified the practice and focused it on Zen spirituality.",
+            "te-filosofia-p1":"The Japanese tea ceremony is guided by the principles of Zen Buddhism, which are expressed through four fundamental virtues:",
+            "te-filosofia-wa":"Harmony (Wa): Balance is sought in the decoration, movements, and surroundings.",
+            "te-filosofia-kei":"Respect (Kei): Respect is shown toward the guests, the host, and nature.",
+            "te-filosofia-sei":"Purity (Sei): Both the cleanliness of the utensils and the atmosphere must be impeccable",
+            "te-filosofia-jaku":"Tranquility (Jaku): The ceremony invites inner peace, contemplation, and mindfulness.",
+            "te-aspectos-matcha":"Matcha Tea: The powdered green tea is the centerpiece, prepared with great attention to every detail.",
+            "te-aspectos-utensilios":"The Utensils (Chadōgu): Specialized tools are used with precise and graceful movements",
+            "te-aspectos-espacio":"The Space: The tea room, with its minimalist décor and often surrounded by gardens, is designed to create an atmosphere of tranquility.",
+            "te-aspectos-anfitrion":"The Host (Dōshu or Menjo): The host, holding a title that certifies their expertise, performs the steps of the ceremony with mastery.",
+            "te-aspectos-invitados":"The Guests: The guests participate actively, performing specific gestures such as turning the bowl before drinking to show respect.",
+            "te-aspectos-dulces":"The Sweets (Wagashi): Japanese sweets are served to balance the bitter intensity of the tea.",
+            "te-importancia-titulo":"Current Importance",
+            "te-importancia-p1":"The tea ceremony remains a vital part of Japanese culture. It is a refined art form and an opportunity for personal connection and appreciation of beauty in the transience and uniqueness of each moment.",
+        
+                //
+            "kabuki-titulo":"Kabuki and Theater",
+            "kabuki-p1":"Kabuki is a traditional and stylized form of Japanese theater that combines drama, dance, and music. It originated in the 17th century and has been recognized by UNESCO as an Intangible Cultural Heritage. It is characterized by its elaborate costumes and makeup (such as Kumadori), the performance of all roles by male actors (including female roles portrayed by onnagata), and a strong visual and physical component that allows the audience to follow the story even without understanding the language",
+            "bonsai-titulo":"Bonsai and Gardens",
+            "bonsai-p1":"Bonsai and Gardens refer to the art of bonsai, which consists of cultivating miniature trees and plants in pots through techniques such as pruning, wiring, and transplanting to recreate the scene of a natural landscape. Bonsai gardens are collections of these miniature trees, which can be displayed in a garden or on a balcony, or serve as decorative elements within a broader landscape design.",
+            
+            //
+            "footer-siguenos":"Follow us on our social media",
+        
+        }
+    };
+
+
+function cambiarIdioma(idioma) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (traducciones[idioma] && traducciones[idioma][key]) {
+      el.textContent = traducciones[idioma][key];
+    }
+  });
+}
+
+document.getElementById('idioma').addEventListener('change', function() {
+  cambiarIdioma(this.value);
+});
+
+// Inicializar en español por defecto
+document.addEventListener('DOMContentLoaded', function() {
+  cambiarIdioma(document.getElementById('idioma').value);
+});
+</script>
+
+
+
+
+    </body>
+     </html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gastronomía Japonesa</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="image/bandera.png" type="image/png">  <!--Ícono en la pestaña del navegador-->
+    </head>
+        
+    <!-- Aviso emergente -->
+<div id="aviso" class="aviso-oculto">
+    ¡En construcción, disculpe la molestia!
+</div>
+
+<script>
+function mostrarAviso() {
+    let aviso = document.getElementById("aviso");
+    aviso.classList.add("mostrar");
+
+    // Ocultar después de 3 segundos
+    setTimeout(() => {
+        aviso.classList.remove("mostrar");
+    }, 3000);
+}
+</script>
+    
+    
+    
+    
+        <body>
+            <!--Aqui va la cebecera-->
+            <header>
+                <div class="bandera">
+                    <img src="image/bandera.png" width="200" height="100" alt="badera Japón" title="Badera Japón">
+                </div>
+                <div class="titulo"> 
+                    Gastronomía: Cultura Japonesa
+
+                </div>
+                <!-- Logo + idioma -->
+  <div class="logo">
+    <img src="image/logo.png" width="200" height="100" alt="Japón en Japonés" title="Japón en Japonés">
+    <div class="idioma">
+        <select id="idioma">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+</div>
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Inicio</a></li>
+                        <li><a href="tradiciones.html">Tradiciones</a></li>
+                        <li> <a href="estetica.html">Estética</a></li>
+                        <li> <a href="innovacion.html">Innovación</a></li>
+                        <li> <a href="gastronomia.html" class="active" >Gastronomía</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#" onclick="mostrarAviso()">Contacto</a></li>
+                    </ul>
+                </nav>
+               
+                
+            </header>
+    <!--Hero imagnes de Japón-->
+    <section class="banner">
+        <div>
+            <img src="image/banner.png" width="100%" height="150" alt="badera Japón" title="Badera Japón">
+        </div>
+
+            <!-- Grilla de platos y bebidas japonesas -->
+    <section class="platos-grid">
+      <div class="plato">
+        <span class="nombre-plato">Sushi</span>
+        <img src="image/gastronomia/sushi.jpg" alt="Sushi">
+        <div class="preparacion">
+          Arroz avinagrado, pescado fresco o vegetales, enrollados en alga nori o moldeados como nigiri.
+        </div>
+      </div>
+      <div class="plato">
+        <span class="nombre-plato">Ramen</span>
+        <img src="image/gastronomia/ramen.jpg" alt="Ramen">
+        <div class="preparacion">
+          Sopa con fideos de trigo, caldo de carne o miso, carne de cerdo, huevo, nori y cebollín.
+        </div>
+      </div>
+      <div class="plato">
+        <span class="nombre-plato">Tempura</span>
+        <img src="image/gastronomia/tempura.jpg" alt="Tempura">
+        <div class="preparacion">
+          Mariscos y verduras rebozados con masa ligera y fritos hasta quedar dorados y crujientes.
+        </div>
+      </div>
+      <div class="plato">
+        <span class="nombre-plato">Okonomiyaki</span>
+        <img src="image/gastronomia/Okonomiyaki.jpg" alt="Okonomiyaki">
+        <div class="preparacion">
+          Tortilla japonesa con repollo, harina y huevo, cocida a la plancha y decorada con salsa.
+        </div>
+      </div>
+      <div class="plato">
+        <span class="nombre-plato">Matcha Latte</span>
+        <img src="image/gastronomia/Matchalatte.jpg" alt="Matcha Latte">
+        <div class="preparacion">
+          Té verde matcha en polvo batido con agua caliente y leche para una bebida suave y espumosa.
+        </div>
+      </div>
+      <div class="plato">
+        <span class="nombre-plato">Sake</span>
+        <img src="image/gastronomia/sake.jpg" alt="Sake">
+        <div class="preparacion">
+          Bebida alcohólica obtenida de la fermentación del arroz, servida fría o caliente.
+        </div>
+      </div>
+    </section>
+     <!--Pie de Pagina-->
+
+         <footer>
+            <h2>Síguenos en nuestras redes</h2>
+            <div class="redes-sociales">
+                 <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/x.png" alt="X">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/instagram.png" alt="Instagram">
+                 </a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener">
+                    <img src="image/redes/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener">
+                    <img src="image/redes/youtube.jpg" alt="WhatsApp">
+                </a>
+
+                
+            </div>
+             <p class="copyright">Copyright © 2025 Rubén Darío Ávila Sandoval All Rights Reserved.</p>
+    
+        </footer>
+      
+
+      <audio id="sonido-hover" src="audio/hover-sound.mp3" preload="auto"></audio>
+<script>
+  // Seleccionar todas las imágenes de la grid
+  document.addEventListener('DOMContentLoaded', function() {
+    const sonido = document.getElementById('sonido-hover');
+    const imagenes = document.querySelectorAll('.platos-grid .plato img');
+    imagenes.forEach(img => {
+      img.addEventListener('mouseenter', () => {
+        sonido.currentTime = 0; // Reinicia el sonido para reproducirlo completo incluso con movimientos rápidos
+        sonido.play();
+      });
+    });
+  });
+</script>
+      
+      
+      
+      
+      </body>
+</html>

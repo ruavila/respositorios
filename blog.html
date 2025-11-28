@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noticias, tendencias y curiosidades sobre la cultura japonesa actual. Desde el Hanami hasta la innovación tecnológica.">
+    <title>Blog y Noticias: Cultura Japonesa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="image/bandera.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <div class="bandera">
+        <img src="image/bandera.png" width="200" height="100" alt="Bandera de Japón">
+      </div>
+
+      <div class="titulo" data-i18n="titulo">Blog y Noticias: Cultura Japonesa</div>
+
+      <div class="logo">
+        <img src="image/logo.png" width="200" height="100" alt="Japón en Japonés" title="Japón en Japonés">
+        <div class="idioma">
+          <label for="idioma" class="sr-only" data-i18n="label-idioma">Seleccionar idioma</label>
+          <select id="idioma">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" data-i18n="menu-inicio">Inicio</a></li>
+          <li><a href="tradiciones.html" data-i18n="menu-tradiciones">Tradiciones</a></li>
+          <li><a href="estetica.html" data-i18n="menu-estetica">Estética</a></li>
+          <li><a href="innovacion.html" data-i18n="menu-innovacion">Innovación</a></li>
+          <li><a href="gastronomia.html" data-i18n="menu-gastronomia">Gastronomía</a></li>
+          <li><a href="blog.html" class="active" data-i18n="menu-blog">Blog</a></li>
+          <li><a href="#" onclick="mostrarAviso()" data-i18n="menu-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="banner">
+      <div>
+        <img src="image/banner.png" alt="Bandera Japón" title="Bandera Japón" class="banner-img">
+      </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+      <!-- Introducción -->
+      <section class="intro-blog">
+        <h2 data-i18n="blog-titulo">Noticias y Tendencias del Japón Actual</h2>
+        <p data-i18n="blog-intro">
+          En este espacio compartimos artículos, curiosidades y noticias sobre la cultura japonesa contemporánea.
+          Desde innovaciones tecnológicas hasta tradiciones milenarias que siguen vivas hoy, nuestro blog busca
+          conectar pasado y presente, mostrando cómo Japón equilibra la modernidad con su esencia cultural.
+        </p>
+      </section>
+
+      <!-- Artículos -->
+      <section class="blog-contenido">
+        <article class="articulo">
+                    <div class="slider">
+            <div class="slides">
+                <img src="image/blog/hanami.jpg" alt="Hanami ">
+                <img src="image/blog/hanami1.jpg" alt="Hanami 1">
+                <img src="image/blog/hanami2.jpg" alt="Hanami 2">
+                <img src="image/blog/hanami3.jpg" alt="Hanami 3">
+                <img src="image/blog/hanami4.jpg" alt="Hanami 4">
+                <img src="image/blog/hanami5.jpg" alt="Hanami 5">
+            </div>
+
+  <!-- Controles -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
+            <script>
+            const slides = document.querySelector('.slides');
+            const images = document.querySelectorAll('.slides img');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            
+            let index = 0;
+
+            function showSlide(n) {
+                index = (n + images.length) % images.length;
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => showSlide(index + 1));
+            prevBtn.addEventListener('click', () => showSlide(index - 1));
+
+            // Cambio automático cada 5 segundos
+            setInterval(() => showSlide(index + 1), 5000);
+            </script>
+
+
+          <div class="texto-articulo">
+            <h3 data-i18n="articulo1-titulo">El Hanami: Celebrar la Belleza Efímera</h3>
+            <p data-i18n="articulo1-texto">
+              Cada primavera, los japoneses celebran el Hanami, la contemplación de los cerezos en flor. Esta tradición refleja la filosofía del mono no aware, la sensibilidad ante lo efímero de la vida.
+            </p>
+            
+          </div>
+        </article>
+
+        <article class="articulo">
+          <div class="slider-simple">
+            <img id="imagen-rotativa" src="image/blog/robotica.jpg" alt="Tecnología Japonesa">
+            </div>
+          <div class="texto-articulo">
+            <h3 data-i18n="articulo2-titulo">Innovación con Tradición: Japón en el Siglo XXI</h3>
+            <p data-i18n="articulo2-texto">
+              Japón lidera la innovación tecnológica mundial, pero su verdadero éxito está en combinar los avances del futuro con los valores del pasado: armonía, respeto y perfección en los detalles.
+            </p>
+            
+          </div>
+        </article>
+
+        <article class="articulo">
+          <div class="slider-kenburns">
+                <img id="imagen-kenburns" src="image/blog/gastro1.jpg" alt="Gastronomía Japonesa">
+            </div>
+          <div class="texto-articulo">
+            <h3 data-i18n="articulo3-titulo">La Gastronomía Japonesa: Arte, Salud y Tradición</h3>
+            <p data-i18n="articulo3-texto">
+              La cocina japonesa es un equilibrio entre sabor, estética y nutrición. Cada plato cuenta una historia sobre respeto a la naturaleza y amor por la perfección en lo simple.
+            </p>
+            
+          </div>
+        </article>
+      </section>
+
+      <!-- Sobre Nosotros -->
+      <section class="nosotros">
+        <h2 data-i18n="nosotros-titulo">Sobre Nosotros</h2>
+        <p data-i18n="nosotros-texto">
+          Bienvenido a nuestro portal, un espacio dedicado a compartir la riqueza cultural, tecnológica, natural y espiritual de Japón. Nuestro principal objetivo es promover el interés por conocer este fascinante país, ya sea desde su milenaria tradición hasta sus impresionantes avances modernos. Aquí encontrarás información, noticias, recursos interactivos y contenido educativo que te acercará a Japón sin importar en qué parte del mundo te encuentres.
+          Este proyecto ha sido desarrollado como parte del Programa de Ingeniería Multimedia de la Universidad Nacional Abierta y a Distancia (UNAD), dentro del curso 213025.
+        </p>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <h2 data-i18n="footer-siguenos">Síguenos en nuestras redes</h2>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/" target="_blank"><img src="image/redes/facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/" target="_blank"><img src="image/redes/x.png" alt="X"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="image/redes/instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/" target="_blank"><img src="image/redes/tiktok.png" alt="TikTok"></a>
+        <a href="https://wa.me/" target="_blank"><img src="image/redes/whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="image/redes/youtube.jpg" alt="YouTube"></a>
+      </div>
+      <p class="copyright">Copyright © 2025 Rubén Darío Ávila Sandoval. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Aviso emergente -->
+    <div id="aviso" class="aviso-oculto" data-i18n="aviso-construccion">
+      ¡En construcción, disculpe la molestia!
+    </div>
+
+    <!-- JS: Aviso y traducciones -->
+    <script>
+      function mostrarAviso() {
+        let aviso = document.getElementById("aviso");
+        aviso.classList.add("mostrar");
+        setTimeout(() => aviso.classList.remove("mostrar"), 3000);
+      }
+
+      const traducciones = {
+        "es": {
+          "label-idioma": "Seleccionar idioma",
+          "menu-inicio": "Inicio",
+          "menu-tradiciones": "Tradiciones",
+          "menu-estetica": "Estética",
+          "menu-innovacion": "Innovación",
+          "menu-gastronomia": "Gastronomía",
+          "menu-blog": "Blog",
+          "menu-contacto": "Contacto",
+          "blog-titulo": "Noticias y Tendencias del Japón Actual",
+          "blog-intro": "En este espacio compartimos artículos, curiosidades y noticias sobre la cultura japonesa contemporánea. Desde innovaciones tecnológicas hasta tradiciones milenarias que siguen vivas hoy, nuestro blog busca conectar pasado y presente, mostrando cómo Japón equilibra la modernidad con su esencia cultural.",
+          "articulo1-titulo": "El Hanami: Celebrar la Belleza Efímera",
+          "articulo1-texto": "Cada primavera, los japoneses celebran el Hanami, la contemplación de los cerezos en flor. Esta tradición refleja la filosofía del mono no aware, la sensibilidad ante lo efímero de la vida.",
+          "articulo2-titulo": "Innovación con Tradición: Japón en el Siglo XXI",
+          "articulo2-texto": "Japón lidera la innovación tecnológica mundial, pero su verdadero éxito está en combinar los avances del futuro con los valores del pasado: armonía, respeto y perfección en los detalles.",
+          "articulo3-titulo": "La Gastronomía Japonesa: Arte, Salud y Tradición",
+          "articulo3-texto": "La cocina japonesa es un equilibrio entre sabor, estética y nutrición. Cada plato cuenta una historia sobre respeto a la naturaleza y amor por la perfección en lo simple.",
+          "leer-mas": "Leer más",
+          "nosotros-titulo": "Sobre Nosotros",
+          "footer-siguenos": "Síguenos en nuestras redes",
+          "aviso-construccion": "¡En construcción, disculpe la molestia!"
+        },
+        "en": {
+          "label-idioma": "Select Language",
+          "menu-inicio": "Home",
+          "menu-tradiciones": "Traditions",
+          "menu-estetica": "Aesthetics",
+          "menu-innovacion": "Innovation",
+          "menu-gastronomia": "Gastronomy",
+          "menu-blog": "Blog",
+          "menu-contacto": "Contact",
+          "blog-titulo": "News and Trends from Modern Japan",
+          "blog-intro": "Here we share articles, curiosities and news about contemporary Japanese culture. From technological innovations to ancient traditions still alive today, our blog connects past and present, showing how Japan balances modernity with its cultural essence.",
+          "articulo1-titulo": "Hanami: Celebrating Ephemeral Beauty",
+          "articulo1-texto": "Every spring, Japanese people gather under cherry blossoms to celebrate their fleeting beauty. Hanami reflects the philosophy of mono no aware, an awareness of life’s impermanence.",
+          "articulo2-titulo": "Innovation with Tradition: Japan in the 21st Century",
+          "articulo2-texto": "Japan leads the world in technology, but its success lies in blending future advances with timeless values like harmony, respect, and attention to detail.",
+          "articulo3-titulo": "Japanese Gastronomy: Art, Health, and Tradition",
+          "articulo3-texto": "Japanese cuisine is a harmony of taste, aesthetics, and nutrition. Each dish tells a story of respect for nature and love for perfection in simplicity.",
+          "leer-mas": "Read more",
+          "nosotros-titulo": "About Us",
+          "footer-siguenos": "Follow us on our social networks",
+          "aviso-construccion": "Under construction, sorry for the inconvenience!"
+        }
+      };
+
+      function cambiarIdioma(idioma) {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (traducciones[idioma] && traducciones[idioma][key]) {
+            el.textContent = traducciones[idioma][key];
+          }
+        });
+      }
+
+      document.getElementById('idioma').addEventListener('change', function() {
+        cambiarIdioma(this.value);
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        cambiarIdioma(document.getElementById('idioma').value);
+      });
+    </script>
+
+    <script>
+    const slidesContainer = document.querySelector('.slides');
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+
+    function showSlide(n) {
+        // Corrige el índice para que nunca salga del rango
+        if (n < 0) index = totalSlides - 1;
+        else if (n >= totalSlides) index = 0;
+        else index = n;
+
+        // Mueve el contenedor exactamente al slide actual
+        slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => showSlide(index + 1));
+    prevBtn.addEventListener('click', () => showSlide(index - 1));
+
+    // Deslizamiento automático cada 6 segundos
+    setInterval(() => showSlide(index + 1), 6000);
+    </script>
+  
+    <script>
+  const imagen = document.getElementById('imagen-rotativa');
+  
+  const imagenes = [
+    "image/blog/robotica.jpg",
+    "image/blog/robotica1.jpg",
+    "image/blog/robotica2.jpg",
+    "image/blog/robotica3.jpg",
+    "image/blog/robotica4.jpg",
+    "image/blog/robotica5.jpg",
+    "image/blog/robotica6.jpg",
+    "image/blog/robotica7.jpg"
+  ];
+
+  let indice = 0;
+
+  function cambiarImagen() {
+    indice = (indice + 1) % imagenes.length;  // ciclo infinito
+    imagen.style.opacity = 0;                 // efecto de desvanecer
+    setTimeout(() => {
+      imagen.src = imagenes[indice];
+      imagen.style.opacity = 1;
+    }, 1000); // coincide con el tiempo del efecto (1s)
+  }
+
+  // Cambiar cada 4 segundos
+  setInterval(cambiarImagen, 4000);
+</script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const imagen = document.getElementById('imagen-kenburns');
+
+  const imagenes = [
+    "image/blog/gastro1.jpg",
+    "image/blog/gastro2.jpg",
+    "image/blog/gastro3.jpg",
+    "image/blog/gastro4.jpg",
+    "image/blog/gastro5.jpg",
+    "image/blog/gastro6.jpg"
+  ];
+
+  let indice = 0;
+
+  function cambiarImagen() {
+    imagen.style.opacity = 0;           // fade out
+    imagen.style.transform = "scale(1)"; // reinicia zoom
+
+    setTimeout(() => {
+      indice = (indice + 1) % imagenes.length;
+      imagen.src = imagenes[indice];
+      imagen.style.opacity = 1;         // fade in
+      imagen.style.transform = "scale(1.1)"; // aplica zoom suave
+    }, 1000); // coincide con el fade out
+  }
+
+  // inicia con un zoom suave
+  imagen.style.transform = "scale(1.1)";
+
+  // cambia cada 4 segundos
+  setInterval(cambiarImagen, 4000);
+});
+</script>
+
+
+</body>
+</html>

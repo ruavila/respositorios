@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre la riqueza cultural y tecnológica de Japón, desde sus tradiciones hasta su innovación. Portal educativo e interactivo.">
+  <title>Tradición y Modernidad: Cultura Japonesa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="image/bandera.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+        
+   
+    
+    <body>
+       
+            <!--Aqui va la cebecera-->
+            <header>
+  <!-- Bandera -->
+  <div class="bandera">
+    <img src="image/bandera.png" width="200" height="100" alt="Bandera de Japón">
+  </div>
+
+  <!-- Título -->
+  <div class="titulo" data-i18n="titulo">Tradición y Modernidad: Cultura Japonesa</div>
+
+  <!-- Logo + idioma -->
+  <div class="logo">
+    <img src="image/logo.png" width="200" height="100" alt="Japón en Japonés" title="Japón en Japonés">
+    <div class="idioma">
+  <label for="idioma" class="sr-only" data-i18n="label-idioma">Seleccionar idioma</label>
+  <select id="idioma">
+    <option value="es" selected>Español</option>
+    <option value="en">English</option>
+    </select>
+</div>
+</div>
+
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active" data-i18n="menu-inicio">Inicio</a></li>
+      <li><a href="tradiciones.html" data-i18n="menu-tradiciones">Tradiciones</a></li>
+      <li><a href="estetica.html" data-i18n="menu-estetica">Estética</a></li>
+      <li><a href="innovacion.html" data-i18n="menu-innovacion">Innovación</a></li>
+      <li><a href="gastronomia.html" data-i18n="menu-gastronomia">Gastronomía</a></li>
+      <li><a href="blog.html" data-i18n="menu-blog">Blog</a></li>
+      <li><a href="#" onclick="mostrarAviso()" data-i18n="menu-contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Mensaje de bienvenida dinámico -->
+        <div id="mensaje-bienvenida" class="mensaje-bienvenida"><span id="texto-bienvenida"></span></div>
+    <!--Hero imagnes de Japón-->
+    <section class="banner">
+        <div>
+            <img src="image/banner.png" alt="Bandera Japón" title="Bandera Japón" class="banner-img">
+        </div>
+
+        <!--contenedor principal-->
+        <div class="contenedor"> 
+            </section>
+        <!--Bloque Principales-->
+                <main>
+                <div class="grid">
+                     <div class="box">
+                         <h3 data-i18n="tradiciones-titulo">Tradiciones</h3>
+                        <p data-i18n="tradiciones-texto">Ceremonía del Té, Kabuki... Las tradiciones japonesas abarcan desde costumbres sociales y culturales hasta prácticas religiosas y artísticas. Entre las más notables se encuentran el respeto y la modestia, expresados mediante...</p>
+                        <img src="image/tradiciones.png" alt="Tradiciones Japonesas" width="300" height="200">
+                     </div>
+ 
+                <div class="box">
+                        <h3 data-i18n="estetica-titulo">Estética Japonesa</h3>
+                         <p data-i18n="estetica-texto">Es una filosofía de vida que valora la belleza efímera, la asimetría, la imperfección y la armonía con la naturaleza, a diferencia de la estética occidental que suele buscar el orden y la perfección. Conceptos clave como wabi-sabi...</p>
+                        <img src="image/estetica.png" alt="Estética Japonesas">
+                    </div>
+
+                    <div class="box">
+                        <h3 data-i18n="innovacion-titulo">Innovación Tecnólogica</h3>
+                        <p data-i18n="innovacion-texto">Abarca áreas como la robótica, la electrónica de consumo, la inteligencia artificial y la tecnología de la luz. Ejemplos notables incluyen los robots HAL que ayudan a personas con discapacidades, el descubrimiento de la luz LED azul, y la creación de los emojis. Japón también destaca...</p>
+                        <img src="image/innovacion.jpg" alt="Innovación Tecnológica">
+                    </div>
+
+                    <div class="box">
+                        <h3 data-i18n="gastronomia-titulo">Gastronomía</h3>
+                        <p data-i18n="gastronomia-texto">Tambíen conocida como washoku, se caracteriza por su énfasis en ingredientes frescos y de temporada, la importancia de la presentación y el uso del arroz como base, acompañado de sopa de miso, pescado y verduras. Platos icónicos incluyen el sushi y el sashimi, pero también ...</p>
+                        <img src="image/Washoku.jpg" alt="Gastronomía">
+                    </div>  
+            
+                    <div class="box">
+                        <h3 data-i18n="valores-titulo">Valores Sociales</h3>
+                        <p data-i18n="valores-texto">Los valores fundamentales de la sociedad japonesa, que forman la base de su cultura, incluyen el respeto, la armonía (wa), la solidaridad, la honestidad, la gratitud, la paciencia y el colectivismo, donde el grupo prevalece sobre el individuo. Estos principios se manifiestan en el comportamiento social, el respeto por las jerarquías...</p>
+                         <img src="image/valores.jpg" alt="Personas representando valores sociales en Japón">
+                    </div>
+
+                    <div class="box">
+                        <h3 data-i18n="interactiva-titulo">Sección Interactiva</h3>
+                        <p data-i18n="interactiva-texto">Aquí podrás explorar Japón de una forma dinámica y divertida. Recorre sus regiones a través de un mapa interactivo, descubre curiosidades y datos interesantes con nuestro quiz de cultura japonesa, y únete al foro para compartir tus experiencias, preguntas y opiniones con otros entusiastas. ¡Aprender sobre Japón nunca fue tan entretenido!</p>
+                        <img src="image/interactiva.jpg" alt="Sección Interactiva">
+                    </div>
+                </div>       
+        </main>
+        
+        <!--Blog-->
+        
+           <section class="blog">
+                <h2 data-i18n="blog-titulo">Blog / Noticias</h2>
+             <div class="blog-container">
+        
+                <!-- Noticia 1 -->
+                    <div class="noticia">
+                         <img src="image/noticia1.jpg" alt="sellos" width="300" height="200">
+                            <p data-i18n="noticia1-texto"> Un hanko o inkan es un sello personal que se usa tradicionalmente en Japón como sustituto de una firma manuscrita. Quizás te preguntes cuál es la diferencia entre hanko e inkan . Originalmente, el término "hanko" se refería a la herramienta en sí, mientras que "inkan" se refería a la impresión o marca que dejaba el sello. Hoy en día, los hablantes nativos de japonés suelen usar estos dos términos indistintamente. Sin embargo, según el contexto, un término puede ser más apropiado que el otro. En conversaciones informales, se usa comúnmente "hanko", mientras que "inkan" suele tener un tono más formal..
+                            </p>
+                    </div>
+
+                <!-- Noticia 2 -->
+                    <div class="noticia">
+                        <img src="image/noticia2.jpg" alt="Noticia 2" width="300" height="200">
+                        <p data-i18n="noticia2-texto">Debido al crecimiento de la población, entre otros factores, el desperdicio de alimentos se ha convertido en un gran problema en todo el mundo. En Japón, las fábricas, las tiendas de comestibles y los restaurantes se esfuerzan por utilizar los recursos de la manera más eficiente posible, pero es inevitable que haya cierta cantidad de desperdicio de alimentos
+                        </p>
+            </div>
+
+                <!-- Noticia 3 -->
+                    <div class="noticia">
+                        <p data-i18n="noticia3-titulo" class="titulo-noticia"> Japón es líder mundial en robótica e inteligencia artificial </p>
+                      
+                        <p> Tecnología en Japón te trae las últimas noticias sobre avances tecnológicos, innovación japonesa y noticias de actualidad en Japón. Explora cómo Japón lidera el desarrollo en robótica, inteligencia artificial y gadgets futuristas, transformando el mundo con sus ideas revolucionarias. Desde Akihabara, el epicentro de la tecnología y la cultura geek, descubre tendencias únicas y mantente al día con los progresos más relevantes en tecnología en Japón y las innovaciones que están marcando el futuro
+                        </p>
+                     </div>
+
+                 </div>
+            </section>
+
+        <!--Sobre Nosotros-->
+
+            <section class="nosotros">
+                <h2 data-i18n="nosotros-titulo">Sobre Nosotros</h2>
+                <p data-i18n="nosotros-texto">Bienvenido a nuestro portal, un espacio dedicado a compartir la riqueza cultural, tecnológica, natural y espiritual de Japón. Nuestro principal objetivo es promover el interés por conocer este fascinante país, ya sea desde su milenaria tradición hasta sus impresionantes avances modernos. Aquí encontrarás información, noticias, recursos interactivos y contenido educativo que te acercará a Japón sin importar en qué parte del mundo te encuentres.
+                   Este proyecto ha sido desarrollado como parte del Programa de Ingeniería Multimedia de la Universidad Nacional Abierta y a Distancia (UNAD), dentro del curso 213025. La iniciativa busca combinar el conocimiento académico con la pasión por la cultura japonesa, utilizando herramientas digitales para ofrecer una experiencia informativa, interactiva y visualmente atractiva.</p>
+            </section>
+
+        <!--Pie de Pagina-->
+
+         <footer>
+            <h2 data-i18n="footer-siguenos">Síguenos en nuestras redes</h2>
+            <div class="redes-sociales">
+                 <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/x.png" alt="X">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/instagram.png" alt="Instagram">
+                 </a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener">
+                    <img src="image/redes/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener">
+                    <img src="image/redes/youtube.jpg" alt="WhatsApp">
+                </a>
+
+                
+            </div>
+             <p class="copyright">Copyright © 2025 Rubén Darío Ávila Sandoval All Rights Reserved.</p>
+    
+        </footer>
+     <!-- Aviso emergente -->
+<div id="aviso" class="aviso-oculto" data-i18n="aviso-construccion">
+    ¡En construcción, disculpe la molestia!
+</div>
+
+<script>
+function mostrarAviso() {
+    let aviso = document.getElementById("aviso");
+    aviso.classList.add("mostrar");
+
+    // Ocultar después de 3 segundos
+    setTimeout(() => {
+        aviso.classList.remove("mostrar");
+    }, 3000);
+}
+</script>
+        
+<script>
+const traducciones = {
+  "es": {
+    "aviso-construccion": "¡En construcción, disculpe la molestia!",
+    "label-idioma":"Seleccionar Idioma",
+    "menu-inicio": "Inicio",
+    "menu-tradiciones": "Tradiciones",
+    "menu-estetica": "Estética",
+    "menu-innovacion": "Innovación",
+    "menu-gastronomia": "Gastronomía",
+    "menu-blog": "Blog",
+    "menu-contacto": "Contacto",
+    "titulo": "Tradición y Modernidad: Cultura Japonesa",
+    "tradiciones-titulo": "Tradiciones",
+    "tradiciones-texto": "Ceremonía del Té, Kabuki... Las tradiciones japonesas abarcan desde costumbres sociales y culturales hasta prácticas religiosas y artísticas. Entre las más notables se encuentran el respeto y la modestia, expresados mediante...",
+    "estetica-titulo": "Estética Japonesa",
+    "estetica-texto": "Es una filosofía de vida que valora la belleza efímera, la asimetría, la imperfección y la armonía con la naturaleza, a diferencia de la estética occidental que suele buscar el orden y la perfección. Conceptos clave como wabi-sabi...",
+    "innovacion-titulo": "Innovación Tecnólogica",
+    "innovacion-texto": "Abarca áreas como la robótica, la electrónica de consumo, la inteligencia artificial y la tecnología de la luz. Ejemplos notables incluyen los robots HAL que ayudan a personas con discapacidades, el descubrimiento de la luz LED azul, y la creación de los emojis. Japón también destaca...",
+    "gastronomia-titulo": "Gastronomía",
+    "gastronomia-texto": "Tambíen conocida como washoku, se caracteriza por su énfasis en ingredientes frescos y de temporada, la importancia de la presentación y el uso del arroz como base, acompañado de sopa de miso, pescado y verduras. Platos icónicos incluyen el sushi y el sashimi, pero también ...",
+    "valores-titulo": "Valores Sociales",
+    "valores-texto": "Los valores fundamentales de la sociedad japonesa, que forman la base de su cultura, incluyen el respeto, la armonía (wa), la solidaridad, la honestidad, la gratitud, la paciencia y el colectivismo, donde el grupo prevalece sobre el individuo. Estos principios se manifiestan en el comportamiento social, el respeto por las jerarquías...",
+    "interactiva-titulo": "Sección Interactiva",
+    "interactiva-texto": "Aquí podrás explorar Japón de una forma dinámica y divertida. Recorre sus regiones a través de un mapa interactivo, descubre curiosidades y datos interesantes con nuestro quiz de cultura japonesa, y únete al foro para compartir tus experiencias, preguntas y opiniones con otros entusiastas. ¡Aprender sobre Japón nunca fue tan entretenido!",
+    "blog-titulo": "Blog / Noticias",
+    "noticia1-texto": "Un hanko o inkan es un sello personal que se usa tradicionalmente en Japón como sustituto de una firma manuscrita. Quizás te preguntes cuál es la diferencia entre hanko e inkan . Originalmente, el término hanko se refería a la herramienta en sí, mientras que inkan  se refería a la impresión o marca que dejaba el sello. Hoy en día, los hablantes nativos de japonés suelen usar estos dos términos indistintamente. Sin embargo, según el contexto, un término puede ser más apropiado que el otro. En conversaciones informales, se usa comúnmente hanko, mientras que inkan suele tener un tono más formal..",
+    "noticia2-texto": "Debido al crecimiento de la población, entre otros factores, el desperdicio de alimentos se ha convertido en un gran problema en todo el mundo. En Japón, las fábricas, las tiendas de comestibles y los restaurantes se esfuerzan por utilizar los recursos de la manera más eficiente posible, pero es inevitable que haya cierta cantidad de desperdicio de alimentos...",
+    "noticia3-titulo": "Japón es líder mundial en robótica e inteligencia artificial",
+    "noticia3-texto": "Tecnología en Japón te trae las últimas noticias sobre avances tecnológicos, innovación japonesa y noticias de actualidad en Japón. Explora cómo Japón lidera el desarrollo en robótica, inteligencia artificial y gadgets futuristas, transformando el mundo con sus ideas revolucionarias. Desde Akihabara, el epicentro de la tecnología y la cultura geek, descubre tendencias únicas y mantente al día con los progresos más relevantes en tecnología en Japón y las innovaciones que están marcando el futuro",
+    "nosotros-titulo": "Sobre Nosotros",
+    "nosotros-texto": "Bienvenido a nuestro portal, un espacio dedicado a compartir la riqueza cultural, tecnológica, natural y espiritual de Japón. Nuestro principal objetivo es promover el interés por conocer este fascinante país, ya sea desde su milenaria tradición hasta sus impresionantes avances modernos. Aquí encontrarás información, noticias, recursos interactivos y contenido educativo que te acercará a Japón sin importar en qué parte del mundo te encuentres. Este proyecto ha sido desarrollado como parte del Programa de Ingeniería Multimedia de la Universidad Nacional Abierta y a Distancia (UNAD), dentro del curso 213025. La iniciativa busca combinar el conocimiento académico con la pasión por la cultura japonesa, utilizando herramientas digitales para ofrecer una experiencia informativa, interactiva y visualmente atractiva.",
+    "footer-siguenos": "Síguenos en nuestras redes",
+    "mensaje-bienvenida": "¡Bienvenido a nuestro sitio dedicado a la cultura japonesa!",
+ },
+  "en": {
+    "aviso-construccion": "Under construction, sorry for the inconvenience!",
+    "label-idioma":"Select Languaje",
+    "menu-inicio": "Home",
+    "menu-tradiciones": "Traditions",
+    "menu-estetica": "Aesthetics",
+    "menu-innovacion": "Innovation",
+    "menu-gastronomia": "Gastronomy",
+    "menu-blog": "Blog",
+    "menu-contacto": "Contact",
+    "titulo": "Tradition and Modernity: Japanese Culture",
+    "tradiciones-titulo": "Traditions",
+    "tradiciones-texto": "Tea Ceremony, Kabuki... Japanese traditions range from social and cultural customs to religious and artistic practices. Among the most notable are respect and modesty, expressed through ...",
+    "estetica-titulo": "Japanese Aesthetics",
+    "estetica-texto": "It is a philosophy of life that values ephemeral beauty, asymmetry, imperfection, and harmony with nature, unlike Western aesthetics, which usually seeks order and perfection. Key concepts such as wabi-sabi...",
+    "innovacion-titulo": "Technological Innovation",
+    "innovacion-texto": "Covers areas such as robotics, consumer electronics, artificial intelligence, and light technology. Notable examples include HAL robots that help people with disabilities, the discovery of blue LED light, and the creation of emojis. Japan also stands out ...",
+    "gastronomia-titulo": "Gastronomy",
+    "gastronomia-texto": "Also known as washoku, it emphasizes fresh and seasonal ingredients, the importance of presentation, and the use of rice as a base, accompanied by miso soup, fish, and vegetables. Iconic dishes include sushi and sashimi, but also ...",
+    "valores-titulo": "Social Values",
+    "valores-texto": "The fundamental values of Japanese society, which form the basis of its culture, include respect, harmony (wa), solidarity, honesty, gratitude, patience, and collectivism, where the group prevails over the individual. These principles are manifested in social behavior, respect for hierarchies...",
+    "interactiva-titulo": "Interactive Section",
+    "interactiva-texto": "Here, you can explore Japan in a dynamic and fun way. Tour its regions through an interactive map, discover interesting facts with our Japanese culture quiz, and join the forum to share your experiences, questions, and opinions with other enthusiasts. Learning about Japan has never been so entertaining!",
+    "blog-titulo": "Blog / News",
+    "noticia1-texto": "A hanko or inkan is a personal seal traditionally used in Japan as a substitute for a handwritten signature. You might wonder what the difference is between hanko and inkan. Originally, the term hanko referred to the tool itself, while inkan referred to the impression or mark left by the seal. Nowadays, native Japanese speakers usually use these two terms interchangeably. However, depending on the context, one term may be more appropriate than the other. In informal conversations, hanko is commonly used, while inkan tends to have a more formal tone...",
+    "noticia2-texto": "Due to population growth, among other factors, food waste has become a major problem around the world. In Japan, factories, grocery stores, and restaurants strive to use resources as efficiently as possible, but it is inevitable that there will still be a certain amount of food waste...",
+    "noticia3-titulo": "Japan is a world leader in robotics and artificial intelligence",
+    "noticia3-texto": "echnology in Japan brings you the latest news on technological advancements, Japanese innovation, and current events in Japan. Explore how Japan leads the way in the development of robotics, artificial intelligence, and futuristic gadgets, transforming the world with its revolutionary ideas. From Akihabara—the epicenter of technology and geek culture—discover unique trends and stay up to date with the most relevant developments in Japanese technology and the innovations shaping the future.Technology in Japan brings you the latest news on technological advances, Japanese innovation...",
+    "nosotros-titulo": "About Us",
+    "nosotros-texto": "Welcome to our portal, a space dedicated to sharing the cultural, technological, natural, and spiritual richness of Japan. Our main goal is to promote interest in learning about this fascinating country, from its ancient tradition to its impressive modern advancements. Here you'll find information, news, interactive resources, and educational content that will bring you closer to Japan no matter where you are. This project was developed as part of the Multimedia Engineering Program at the Universidad Nacional Abierta y a Distancia (UNAD), within course 213025. The initiative seeks to combine academic knowledge with a passion for Japanese culture, using digital tools to offer an informative, interactive, and visually appealing experience.",
+    "footer-siguenos": "Follow us on our social networks",
+    "mensaje-bienvenida": "Welcome to our site dedicated to Japanese culture!",
+    // Add more keys as needed
+  }
+};
+
+ function cambiarIdioma(idioma) {
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (traducciones[idioma] && traducciones[idioma][key]) {
+      el.textContent = traducciones[idioma][key];
+    }
+  });
+  // Nuevo: actualiza el mensaje desplazable en el span
+  var spanBienvenida = document.getElementById("texto-bienvenida");
+  var mensaje = (traducciones[idioma] && traducciones[idioma]["mensaje-bienvenida"])
+    ? traducciones[idioma]["mensaje-bienvenida"]
+    : traducciones["es"]["mensaje-bienvenida"];
+  if (spanBienvenida) spanBienvenida.textContent = mensaje;
+}
+
+
+// Inicializa al cargar la página
+document.addEventListener('DOMContentLoaded', function() {
+  var valorInicial = selectorIdioma ? selectorIdioma.value : 'es';
+  cambiarIdioma(valorInicial);
+});
+
+document.getElementById('idioma').addEventListener('change', function() {
+  cambiarIdioma(this.value);
+});
+
+// Inicializar en español por defecto
+document.addEventListener('DOMContentLoaded', function() {
+  cambiarIdioma(document.getElementById('idioma').value);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("mensaje-bienvenida").textContent = "¡Bienvenido a nuestro sitio dedicado a la cultura japonesa!";
+});
+
+
+    </body>
+     </html>

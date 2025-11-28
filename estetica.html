@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estética en la Cultura Japonesa</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="image/bandera.png" type="image/png">
+    </head>
+        
+    <!-- Aviso emergente -->
+    <div id="aviso" class="aviso-oculto" data-i18n="aviso-construccion">
+        ¡En construcción, disculpe la molestia!
+    </div>
+
+    <script>
+        function mostrarAviso() {
+            let aviso = document.getElementById("aviso");
+            aviso.classList.add("mostrar");
+            setTimeout(() => {
+                aviso.classList.remove("mostrar");
+            }, 3000);
+        }
+    </script>
+    
+    <body>
+        <!--Cabecera-->
+        <header>
+            <div class="bandera">
+                <img src="image/bandera.png" width="200" height="100" alt="bandera Japón" title="Bandera Japón">
+            </div>
+
+            <div class="titulo" data-i18n="titulo-estetica"> 
+                Estética de la Cultura Japonesa
+            </div>
+
+            <div class="logo">
+                <img src="image/logo.png" width="200" height="100" alt="Japón en Japonés" title="Japón en Japonés">
+                
+                <div class="idioma">
+                    <label for="idioma" class="sr-only" data-i18n="label-idioma">Seleccionar idioma</label>
+                    <select id="idioma">
+                        <option value="es" selected>Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="menu-inicio">Inicio</a></li>
+                    <li><a href="tradiciones.html" data-i18n="menu-tradiciones">Tradiciones</a></li>
+                    <li><a href="estetica.html" class="active" data-i18n="menu-estetica">Estética</a></li>
+                    <li><a href="innovacion.html" data-i18n="menu-innovacion">Innovación</a></li>
+                    <li><a href="gastronomia.html" data-i18n="menu-gastronomia">Gastronomía</a></li>
+                    <li><a href="blog.html" data-i18n="menu-blog">Blog</a></li>
+                    <li><a href="#" onclick="mostrarAviso()" data-i18n="menu-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Hero banner-->
+        <section class="banner">
+            <div>
+                <img src="image/banner.png" width="100%" height="150" alt="badera Japón" title="Badera Japón">
+            </div>
+        </section>
+
+        <!--Contenido principal-->
+        <main>
+            <section class="destacado">
+                <h1 data-i18n="arquitectura-titulo">Arquitectura Tradicional</h1>
+                <div class="video-embed">
+                    <iframe 
+                        src="https://www.dailymotion.com/embed/video/x9qzjd0?autoplay=1&mute=1&loop=1"  
+                        frameborder="0" 
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- SECCIÓN WABI-SABI -->
+            <section class="bloque rosa">
+                <h2 data-i18n="wabisabi-titulo">Wabi - Sabi</h2>
+                <p data-i18n="wabisabi-descripcion">Wabi-sabi es un concepto estético y filosófico japonés que encuentra belleza en la imperfección, la impermanencia y la incompletitud de la naturaleza y las cosas. Se basa en la idea de que la belleza reside en la autenticidad de las cosas tal como son, aceptando la fugacidad del tiempo y el deterioro como parte de su carácter único. Este concepto influye en el arte, el diseño y una forma de vivir que valora la simplicidad y la conexión con la naturaleza, en contraposición a la búsqueda occidental de la perfección y el materialismo.</p>
+                <div class="galeria">
+                    <img src="image/estetica/wabisabi/wabi1.jpg" alt="Decoración Wabi-Sabi">
+                    <img src="image/estetica/wabisabi/wabi2.jpg" alt="Ambiente Wabi-Sabi">
+                    <img src="image/estetica/wabisabi/wabi3.jpg" alt="Decoración Wabi-Sabi">
+                    <img src="image/estetica/wabisabi/wabi4.jpg" alt="Ambiente Wabi-Sabi">
+                </div>
+            </section>
+
+            <!-- SECCIÓN MINIMALISMO -->
+            <section class="bloque rosado">
+                <h2 data-i18n="minimalismo-titulo">Minimalismo en el Diseño Actual</h2>
+                <div class="bloque-contenido">
+                    <div class="imagen">
+                        <img src="image/estetica/minimalismo/minimal2.jpg" alt="Diseño minimalista japonés">
+                    </div>
+                    <div class="texto">
+                        <p data-i18n="minimalismo-descripcion">
+                            El minimalismo en el diseño japonés se basa en la simplicidad, 
+                            la armonía y la funcionalidad. Inspirado en la filosofía Zen, 
+                            busca reducir los elementos a lo esencial, eliminando lo innecesario. 
+                            Este estilo se refleja en la arquitectura, los interiores y la moda, 
+                            transmitiendo calma y equilibrio en cada espacio.
+                        </p>
+                    </div>
+                    <div class="imagen">
+                        <img src="image/estetica/minimalismo/minimal1.jpg" alt="Espacio minimalista japonés">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN GALERÍA INTERACTIVA -->
+            <section class="bloque rojo">
+                <h2 data-i18n="galeria-titulo">Galería de Fotos Interactivas</h2>
+                <div class="carrusel">
+                    <div class="carrusel-contenido">
+                        <img src="image/estetica/interactiva/hanami.jpg" alt="Hanami">
+                        <img src="image/estetica/interactiva/obon.jpg" alt="Obon">
+                        <img src="image/estetica/interactiva/añonuevo.jpg" alt="Año Nuevo Japonés">
+                        <img src="image/estetica/interactiva/festival.jpg" alt="Festival Japonés">
+                        <img src="image/estetica/interactiva/festival2.png" alt="Festival Japonés">
+                        <img src="image/estetica/interactiva/festival3.jpg" alt="Festival Japonés">
+                        <img src="image/estetica/interactiva/fondo1.jpg" alt="Fondo">
+                        <img src="image/estetica/interactiva/fondo2.jpg" alt="Fondo Japonés">
+                        <!-- Repetición para efecto infinito -->
+                        <img src="image/estetica/interactiva/hanami.jpg" alt="Hanami">
+                        <img src="image/estetica/interactiva/obon.jpg" alt="Obon">
+                        <img src="image/estetica/interactiva/añonuevo.jpg" alt="Año Nuevo Japonés">
+                        <img src="image/estetica/interactiva/festival.jpg" alt="Festival Japonés">
+                        <img src="image/estetica/interactiva/festival2.png" alt="Festival Japonés">
+                        <img src="image/estetica/interactiva/festival3.jpg" alt="Festival Japonés">
+                        <img src="image/estetica/interactiva/fondo1.jpg" alt="Fondo">
+                        <img src="image/estetica/interactiva/fondo2.jpg" alt="Fondo Japonés">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <h2 data-i18n="footer-siguenos">Síguenos en nuestras redes</h2>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/x.png" alt="X">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener">
+                    <img src="image/redes/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                    <img src="image/redes/youtube.jpg" alt="YouTube">
+                </a>
+            </div>
+            <p class="copyright">Copyright © 2025 Rubén Darío Ávila Sandoval All Rights Reserved.</p>
+        </footer>
+
+        <!-- SCRIPT DE TRADUCCIÓN MULTIIDIOMA -->
+        <script>
+        const traducciones = {
+          "es": {
+            "aviso-construccion": "¡En construcción, disculpe la molestia!",
+            "label-idioma": "Seleccionar idioma",
+            "titulo-estetica": "Estética de la Cultura Japonesa",
+            "menu-inicio": "Inicio",
+            "menu-tradiciones": "Tradiciones",
+            "menu-estetica": "Estética",
+            "menu-innovacion": "Innovación",
+            "menu-gastronomia": "Gastronomía",
+            "menu-blog": "Blog",
+            "menu-contacto": "Contacto",
+            "arquitectura-titulo": "Arquitectura Tradicional",
+            "wabisabi-titulo": "Wabi - Sabi",
+            "wabisabi-descripcion": "Wabi-sabi es un concepto estético y filosófico japonés que encuentra belleza en la imperfección, la impermanencia y la incompletitud de la naturaleza y las cosas. Se basa en la idea de que la belleza reside en la autenticidad de las cosas tal como son, aceptando la fugacidad del tiempo y el deterioro como parte de su carácter único. Este concepto influye en el arte, el diseño y una forma de vivir que valora la simplicidad y la conexión con la naturaleza, en contraposición a la búsqueda occidental de la perfección y el materialismo.",
+            "minimalismo-titulo": "Minimalismo en el Diseño Actual",
+            "minimalismo-descripcion": "El minimalismo en el diseño japonés se basa en la simplicidad, la armonía y la funcionalidad. Inspirado en la filosofía Zen, busca reducir los elementos a lo esencial, eliminando lo innecesario. Este estilo se refleja en la arquitectura, los interiores y la moda, transmitiendo calma y equilibrio en cada espacio.",
+            "galeria-titulo": "Galería de Fotos Interactivas",
+            "footer-siguenos": "Síguenos en nuestras redes"
+          },
+          "en": {
+            "aviso-construccion": "Under construction, sorry for the inconvenience!",
+            "label-idioma": "Select language",
+            "titulo-estetica": "Japanese Culture Aesthetics",
+            "menu-inicio": "Home",
+            "menu-tradiciones": "Traditions",
+            "menu-estetica": "Aesthetics",
+            "menu-innovacion": "Innovation",
+            "menu-gastronomia": "Gastronomy",
+            "menu-blog": "Blog",
+            "menu-contacto": "Contact",
+            "arquitectura-titulo": "Traditional Architecture",
+            "wabisabi-titulo": "Wabi - Sabi",
+            "wabisabi-descripcion": "Wabi-sabi is a Japanese aesthetic and philosophical concept that finds beauty in the imperfection, impermanence, and incompleteness of nature and things. It is based on the idea that beauty resides in the authenticity of things as they are, accepting the transience of time and deterioration as part of their unique character. This concept influences art, design, and a way of living that values simplicity and connection with nature, in contrast to the Western pursuit of perfection and materialism.",
+            "minimalismo-titulo": "Minimalism in Current Design",
+            "minimalismo-descripcion": "Minimalism in Japanese design is based on simplicity, harmony, and functionality. Inspired by Zen philosophy, it seeks to reduce elements to the essential, eliminating the unnecessary. This style is reflected in architecture, interiors, and fashion, conveying calm and balance in every space.",
+            "galeria-titulo": "Interactive Photo Gallery",
+            "footer-siguenos": "Follow us on our social networks"
+          }
+        };
+
+        function cambiarIdioma(idioma) {
+          document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (traducciones[idioma] && traducciones[idioma][key]) {
+              el.textContent = traducciones[idioma][key];
+            }
+          });
+        }
+
+        // Evento al cambiar idioma
+        document.getElementById('idioma').addEventListener('change', function() {
+          cambiarIdioma(this.value);
+        });
+
+        // Inicializar con el idioma por defecto
+        document.addEventListener('DOMContentLoaded', function() {
+          cambiarIdioma(document.getElementById('idioma').value);
+        });
+        </script>
+    </body>
+</html>
